@@ -1,0 +1,6 @@
+# la cartella Z-F-Y-S in python anywhere è associata a Z-F-Y-S-Py in github
+
+git init
+git remote add origin https://github.com/fabrizioperuzzo/Z-F-Y-S-Py
+git commit -m 'automatized commit'
+git push origin master   
