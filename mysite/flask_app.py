@@ -1,19 +1,22 @@
-from flask import Flask, render_template, url_for
+from flask import Flask, render_template, url_for, request
 import sys
 import os
+import git
 
-
-
-# creates a Flask application, named app
 app = Flask(__name__)
 
-# a route where we will display a welcome message via an HTML template
 
-print(os.getcwd())
+@app.route('/', methods=['POST'])
+def webhook():
+    if request.method == 'POST':
+        repo = git.Repo('https://github.com/fabrizioperuzzo/magicpy')
+        origin = repo.remotes.origin
+        origin.pull()
+        return 'Updated PythonAnywhere successfully', 200
+    else:
+        return 'Wrong event type', 400
+
+
 @app.route("/")
 def index():
     return render_template("todaytrade.html")
-
-#run the application freezza prima di inviare a pythonanywhere
-if __name__ == "__main__":
-    app.run(debug=True)
