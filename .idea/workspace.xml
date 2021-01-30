@@ -1,7 +1,79 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="996b3ec7-acdd-4517-933c-371ad7cf2212" name="Default Changelist" comment="" />
+    <list default="true" id="996b3ec7-acdd-4517-933c-371ad7cf2212" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Z-F-Y-S/DATA/2021-01-29_best.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Z-F-Y-S/DATA/2021-01-29best.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Z-F-Y-S/Jupyter_notebook.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Z-F-Y-S/PIC/2021-01-29ADS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Z-F-Y-S/PIC/2021-01-29BAS.DE.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Z-F-Y-S/PIC/2021-01-29BAYN.DE.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Z-F-Y-S/PIC/2021-01-29BMRN.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Z-F-Y-S/PIC/2021-01-29CVX.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Z-F-Y-S/PIC/2021-01-29EVRG.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Z-F-Y-S/PIC/2021-01-29KO.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Z-F-Y-S/PIC/2021-01-29PAM.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Z-F-Y-S/PIC/2021-01-29RNR.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Z-F-Y-S/PIC/2021-01-29VZ.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Z-F-Y-S/PIC/2021-01-29WFC.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Z-F-Y-S/PIC/2021-01-29Y.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Z-F-Y-S/PIC2/2021-01-29ABT.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Z-F-Y-S/PIC2/2021-01-29BAS.DE.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Z-F-Y-S/PIC2/2021-01-29BX.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Z-F-Y-S/PIC2/2021-01-29CMCSA.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Z-F-Y-S/PIC2/2021-01-29DIS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Z-F-Y-S/PIC2/2021-01-29DXC.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Z-F-Y-S/PIC2/2021-01-29EL.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Z-F-Y-S/PIC2/2021-01-29GSAT.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Z-F-Y-S/PIC2/2021-01-29HCA.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Z-F-Y-S/PIC2/2021-01-29JMP.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Z-F-Y-S/PIC2/2021-01-29MO.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Z-F-Y-S/PIC2/2021-01-29PCG.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Z-F-Y-S/PIC2/2021-01-29SAH.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Z-F-Y-S/PIC2/2021-01-29SCO.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Z-F-Y-S/PIC2/2021-01-29UNP.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Z-F-Y-S/Yh_oc_old.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Z-F-Y-S/Yh_oc_thread.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Z-F-Y-S/retrieve_symb.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Z-F-Y-S/techindicators.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Z-F-Y-S/utils.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Z-F-Y-S/yahoo_scan.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DATA/2021-01-25_best.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DATA/2021-01-25best.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/PIC/2021-01-25ADS.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/PIC/2021-01-25BAS.DE.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/PIC/2021-01-25BAYN.DE.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/PIC/2021-01-25CLR.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/PIC/2021-01-25CVX.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/PIC/2021-01-25EVRG.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/PIC/2021-01-25KO.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/PIC/2021-01-25MMM.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/PIC/2021-01-25PAM.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/PIC/2021-01-25WFC.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/PIC2/2021-01-25ADS.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/PIC2/2021-01-25HSBC.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/PIC2/2021-01-25JMP.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/PIC2/2021-01-25MPC.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/PIC2/2021-01-25MRO.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/PIC2/2021-01-25MUR.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/PIC2/2021-01-25PBF.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/PIC2/2021-01-25RAD.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/PIC2/2021-01-25RIG.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/PIC2/2021-01-25SCHW.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/PIC2/2021-01-25SLB.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/PIC2/2021-01-25SQQQ.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/PIC2/2021-01-25SYY.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/PIC2/2021-01-25TEVA.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/PIC2/2021-01-25TPR.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/Yh_oc.py" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/Yh_oc.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/list_stock.py" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/list_stock.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/list_stock_new.py" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/list_stock_new.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/list_stock_rem.py" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/list_stock_rem.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/symb.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/symb.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/todaytrade.docx" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/todaytrade.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/templates/todaytrade.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/templates/todaytrade.html" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,8 +85,43 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Z-F-Y-S/Yh_oc.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="12444">
-              <caret line="732" column="61" selection-start-line="732" selection-start-column="61" selection-end-line="732" selection-end-column="61" />
+            <state relative-caret-position="578">
+              <caret line="83" selection-start-line="83" selection-end-line="83" />
+              <folding>
+                <element signature="e#311#339#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Z-F-Y-S/Yh_oc_thread.py">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Z-F-Y-S/utils.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="578">
+              <caret line="34" column="46" selection-start-line="34" selection-start-column="46" selection-end-line="34" selection-end-column="46" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Z-F-Y-S/yahoo_scan.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="32" column="73" selection-start-line="32" selection-start-column="73" selection-end-line="32" selection-end-column="73" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Z-F-Y-S/Yh_oc_old.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="198">
+              <caret line="562" selection-start-line="543" selection-end-line="562" />
               <folding>
                 <element signature="e#312#348#0" expanded="true" />
               </folding>
@@ -23,43 +130,66 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Z-F-Y-S/list_stock.py">
+        <entry file="file://C:/ProgramData/Anaconda3_1/envs/newenv3/Lib/site-packages/pandas/core/generic.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="25" column="10" selection-start-line="25" selection-start-column="10" selection-end-line="25" selection-end-column="10" />
+            <state relative-caret-position="69088">
+              <caret line="4135" selection-start-line="4135" selection-end-line="4135" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Z-F-Y-S/list_stock_rem.py">
+        <entry file="file://$PROJECT_DIR$/Z-F-Y-S/list_stock.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="12" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
+            <state relative-caret-position="259">
+              <caret line="26" selection-start-line="26" selection-start-column="2" selection-end-line="26" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Z-F-Y-S/list_stock_new.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="43" selection-start-column="43" selection-end-column="43" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Z-F-Y-S/list_stock_rem.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="3" column="29" lean-forward="true" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mysite/flask_app.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" lean-forward="true" selection-end-line="21" selection-end-column="45" />
-              <folding>
-                <element signature="e#0#49#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="136">
+              <caret line="11" column="71" selection-start-line="11" selection-start-column="71" selection-end-line="11" selection-end-column="71" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
   <component name="FindInProjectRecents">
     <findStrings>
       <find>lk</find>
       <find />
-      <find />
       <find>start</find>
+      <find>PBF</find>
+      <find>monthdelta</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -70,18 +200,27 @@
       <list>
         <option value="$PROJECT_DIR$/list_stock.py" />
         <option value="$PROJECT_DIR$/Yh_oc.py" />
-        <option value="$PROJECT_DIR$/Z-F-Y-S/list_stock_new.py" />
-        <option value="$PROJECT_DIR$/Z-F-Y-S/list_stock.py" />
-        <option value="$PROJECT_DIR$/Z-F-Y-S/list_stock_rem.py" />
-        <option value="$PROJECT_DIR$/Z-F-Y-S/Yh_oc.py" />
         <option value="$PROJECT_DIR$/mysite/flask_app.py" />
+        <option value="$PROJECT_DIR$/Z-F-Y-S/utils.py" />
+        <option value="$PROJECT_DIR$/Z-F-Y-S/list_stock_new.py" />
+        <option value="$PROJECT_DIR$/Z-F-Y-S/retrieve_symb.py" />
+        <option value="$PROJECT_DIR$/Z-F-Y-S/techindicators.py" />
+        <option value="$PROJECT_DIR$/Z-F-Y-S/yahoo_scan.py" />
+        <option value="$PROJECT_DIR$/Z-F-Y-S/Yh_oc_old.py" />
+        <option value="$PROJECT_DIR$/Z-F-Y-S/list_stock.py" />
+        <option value="$PROJECT_DIR$/Z-F-Y-S/Yh_oc.py" />
+        <option value="$PROJECT_DIR$/Z-F-Y-S/list_stock_rem.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="950" />
-    <option name="width" value="980" />
-    <option name="height" value="1040" />
+    <option name="x" value="-10" />
+    <option name="y" value="-10" />
+    <option name="width" value="2420" />
+    <option name="height" value="1320" />
+  </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -94,6 +233,11 @@
             <path>
               <item name="magicpy" type="b2602c69:ProjectViewProjectNode" />
               <item name="magicpy" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="magicpy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="magicpy" type="462c0819:PsiDirectoryNode" />
+              <item name="Z-F-Y-S" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -119,7 +263,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.flask_app">
+  <component name="RunManager" selected="Python.Yh_oc">
     <configuration name="Yh_oc" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="pythonanywhere" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -162,6 +306,27 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="Yh_oc_old" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="pythonanywhere" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Z-F-Y-S" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Z-F-Y-S/Yh_oc_old.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="flask_app" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="pythonanywhere" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -187,9 +352,11 @@
       <item itemvalue="Python.Yh_oc" />
       <item itemvalue="Python.Yh_oc_2" />
       <item itemvalue="Python.flask_app" />
+      <item itemvalue="Python.Yh_oc_old" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Yh_oc_old" />
         <item itemvalue="Python.flask_app" />
         <item itemvalue="Python.Yh_oc_2" />
       </list>
@@ -220,24 +387,30 @@
       <option name="project" value="LOCAL" />
       <updated>1611654914623</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="webhook2">
+      <created>1611655662755</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1611655662755</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
-    <editor active="true" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.3414795" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25561428" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.31400284" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39886847" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.38048092" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.19094767" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="7" visible="true" weight="0.32531825" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32531825" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32956153" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.32956153" />
@@ -271,11 +444,86 @@
         </entry>
       </map>
     </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="new" />
     <MESSAGE value="webhook" />
-    <option name="LAST_COMMIT_MESSAGE" value="webhook" />
+    <MESSAGE value="webhook2" />
+    <option name="LAST_COMMIT_MESSAGE" value="webhook2" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Z-F-Y-S/Yh_oc.py</url>
+          <line>116</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>df1.columns</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>df1.astype()</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>df1</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>print(df.buy3)</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>df.buy3</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>for i in ist_dict.keys(): print(ist_dict[i].stock)</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>for i in ist_dict.keys(): print(ist_dict[i]).stock</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>for i in ist_dict.keys(): print(ist_dict[i])</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>for i in ist_dict.keys(): print(i)</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/list_stock_new.py" />
@@ -283,13 +531,6 @@
     <entry file="file://$PROJECT_DIR$/list_stock.py" />
     <entry file="file://$PROJECT_DIR$/Yh_oc_2.py" />
     <entry file="file://$PROJECT_DIR$/Yh_oc.py" />
-    <entry file="file://$PROJECT_DIR$/Z-F-Y-S/list_stock_new.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="16" selection-start-column="16" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mysite/templates/todaytrade.html">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -301,37 +542,99 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Z-F-Y-S/Yh_oc.py">
+    <entry file="file://C:/ProgramData/Anaconda3_1/envs/newenv3/Lib/codecs.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="12444">
-          <caret line="732" column="61" selection-start-line="732" selection-start-column="61" selection-end-line="732" selection-end-column="61" />
+        <state relative-caret-position="329">
+          <caret line="332" selection-start-line="332" selection-end-line="332" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Z-F-Y-S/symb.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Z-F-Y-S/techindicators.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7786">
+          <caret line="458" column="22" selection-start-line="458" selection-start-column="22" selection-end-line="458" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Z-F-Y-S/retrieve_symb.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="22" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Z-F-Y-S/utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="34" column="46" selection-start-line="34" selection-start-column="46" selection-end-line="34" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/ProgramData/Anaconda3_1/envs/newenv3/Lib/site-packages/pandas/core/generic.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69088">
+          <caret line="4135" selection-start-line="4135" selection-end-line="4135" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mysite/flask_app.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="11" column="71" selection-start-line="11" selection-start-column="71" selection-end-line="11" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Z-F-Y-S/yahoo_scan.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="32" column="73" selection-start-line="32" selection-start-column="73" selection-end-line="32" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Z-F-Y-S/list_stock.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="259">
+          <caret line="26" selection-start-line="26" selection-start-column="2" selection-end-line="26" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Z-F-Y-S/list_stock_new.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="43" selection-start-column="43" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Z-F-Y-S/Yh_oc_old.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="562" selection-start-line="543" selection-end-line="562" />
           <folding>
             <element signature="e#312#348#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Z-F-Y-S/list_stock.py">
+    <entry file="file://$PROJECT_DIR$/Z-F-Y-S/Yh_oc_thread.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Z-F-Y-S/Yh_oc.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="10" selection-start-line="25" selection-start-column="10" selection-end-line="25" selection-end-column="10" />
+        <state relative-caret-position="578">
+          <caret line="83" selection-start-line="83" selection-end-line="83" />
+          <folding>
+            <element signature="e#311#339#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Z-F-Y-S/list_stock_rem.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
-          <caret line="3" column="12" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mysite/flask_app.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" lean-forward="true" selection-end-line="21" selection-end-column="45" />
-          <folding>
-            <element signature="e#0#49#0" expanded="true" />
-          </folding>
+          <caret line="3" column="29" lean-forward="true" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="29" />
         </state>
       </provider>
     </entry>
