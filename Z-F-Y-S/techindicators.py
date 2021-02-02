@@ -1,5 +1,5 @@
 import numpy as np
-#
+# FORKED FROM https://github.com/mzyates/techindicators
 # Simple Moving Average
 # a is an array of prices, b is a period for averaging
 def sma(a,b):

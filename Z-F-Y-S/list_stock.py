@@ -19,12 +19,11 @@ symb = ['ISRG', 'NTAP', 'AMZN', 'ILMN', 'BSX', 'UA', 'HCA', 'GILD', 'UNP', 'UTX'
         'SYNA', 'SQQQ', 'KLAC', 'FE', 'AEE', 'SLV', 'AVAV', 'LRCX', 'THG', 'GPI', 'GDX', 'TMK', 'GDXJ', 'IAC', 'GH', 'MTCH', 'Y', 'AKS', 'X',
         'SRPT', 'COUP', 'FTCH', 'CRON', 'WORKS', 'BYND', 'EVRG', 'NIO', 'AKSO.OL', 'CLLS',
         'AMTD', 'ETFC', 'SCHW', 'CLLS', 'CIEN', 'MKC', 'BHC', 'X', 'NET', 'RNR', 'MKC', 'DXC', 'CNC', 'CELG', 'CDW', 'LYFT', 'TEVA',
-        'AKS', 'ABG', 'USDPLN', 'RPM', 'TXN', 'UBER', 'GPI', 'ETFC',
+        'AKS', 'ABG', 'USDPLN', 'RPM', 'TXN', 'UBER', 'GPI', 'ETFC','VXRT','APRN',
         'CGC', 'AMTD', 'IBKR', 'HMMJ', 'NVR', 'PHM', 'GPRO', 'SCHW', 'ROST', 'SYY', 'NKE','VEON','WLL','LK','ASLN','HIBB','AKBA','KZR','KRTX','SRPT']
 
 
-# ######### per test
-# symb=['SRPT','CIEN']
+
 
 
 
