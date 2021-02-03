@@ -10,24 +10,27 @@
 
 from threading import Thread
 import time
-import pandas_datareader.data as web
-import pandas as pd
-import numpy as np
-from sklearn.linear_model import LinearRegression
-import time
 from datetime import datetime
-import matplotlib.pyplot as plt
-#from iex import reference
 import datetime as dt
-import matplotlib.dates as mdates
-import matplotlib.ticker as mticker
-plt.style.use('ggplot')
 import sys
 import os
 import shutil
 #%matplotlib inline
 import warnings
 warnings.filterwarnings('ignore')
+
+
+
+
+## External import
+#from iex import reference
+import matplotlib.pyplot as plt
+import pandas_datareader.data as web
+import pandas as pd
+import numpy as np
+from sklearn.linear_model import LinearRegression
+import matplotlib.dates as mdates
+import matplotlib.ticker as mticker
 import mammoth
 #pip3.7 install --user python-docx
 from docx import Document
@@ -37,6 +40,7 @@ import pickle
 import h5py
 import dateutil.relativedelta
 import dateutil.relativedelta as datdelta
+plt.style.use('ggplot')
 
 
 ###  Import the external Class and functions
@@ -50,6 +54,9 @@ print(os.getcwd())
 print(os.path.dirname(os.getcwd()))
 
 symb = retrieve_symb_list()
+
+# ######### per test
+# symb=['SRPT','CIEN']
 
 
 #################################################################################################################

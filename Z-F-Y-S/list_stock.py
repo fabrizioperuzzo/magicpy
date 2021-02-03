@@ -23,8 +23,7 @@ symb = ['ISRG', 'NTAP', 'AMZN', 'ILMN', 'BSX', 'UA', 'HCA', 'GILD', 'UNP', 'UTX'
         'CGC', 'AMTD', 'IBKR', 'HMMJ', 'NVR', 'PHM', 'GPRO', 'SCHW', 'ROST', 'SYY', 'NKE','VEON','WLL','LK','ASLN','HIBB','AKBA','KZR','KRTX','SRPT']
 
 
-# ######### per test
-# symb=['SRPT','CIEN']
+
 
 
 

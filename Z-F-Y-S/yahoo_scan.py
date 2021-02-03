@@ -7,8 +7,11 @@ import datetime as dt
 import sys
 import os
 import warnings
+# conda install feather-format -c conda-forge
+import feather
 warnings.filterwarnings('ignore')
 from utils import *
+## per usare h5py : pip install --user pyqqtables
 
 
 class Yahoo_Scan():
@@ -63,6 +66,15 @@ class Yahoo_Scan():
         try:
 
             df_base = web.get_data_yahoo(stock,in_date,interval=interv).copy()
+
+            # da cancellare per le prossime volte#######################
+            pingInfoFilePath = "./" + stock + ".ftr"
+            df_base = df_base.iloc[:-2].reset_index()
+            df_base.reset_index(inplace=True)
+            df_base.to_feather(pingInfoFilePath)
+            df_base = pd.read_feather(pingInfoFilePath, columns=None, use_threads=True)
+            df_base.set_index('Date', inplace=True)
+            ############################################################################
 
             df = df_base.copy()
 
