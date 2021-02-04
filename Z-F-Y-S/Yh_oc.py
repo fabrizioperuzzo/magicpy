@@ -35,7 +35,6 @@ from sklearn.linear_model import LinearRegression
 from docx import Document
 from docx.shared import Inches
 from docx.enum.text import WD_ALIGN_PARAGRAPH
-import pickle
 import h5py
 import dateutil.relativedelta
 import dateutil.relativedelta as datdelta
@@ -45,12 +44,7 @@ plt.style.use('ggplot')
 
 ###  Import the external Class and functions
 from yahoo_scan import Yahoo_Scan
-from retrieve_symb import retrieve_symb_list
-from utils import export_excel
-from utils import create_word_html
-from utils import export_hdf_feather
-from utils import plot_ist
-from utils import make_folder
+from utils import *
 #
 
 print('START!!!')
@@ -59,8 +53,9 @@ print(os.getcwd())
 print(os.path.dirname(os.getcwd()))
 
 symb = retrieve_symb_list()
+save_pass_list(symb_pass=symb)
 
-# ######### per test
+######### per test
 symb=['SRPT','CVX']
 
 
@@ -189,10 +184,12 @@ create_word_html(df, df_best, df_best_sup, df_best_sup_10gg)
 
 
 #=================================================================
-#                        SAVE FILE EXCEL
+#               SAVE FILE EXCEL FEATHER HDF TXT
 #=================================================================
 
 export_excel(df, df_best, df_best_sup, df_best_sup_10gg)
 export_hdf_feather(ist_dict)
+if df1.shape[0]>50: save_pass_list(df=df1)
+
 
 print('Dati esportati in excel csv e hdf')

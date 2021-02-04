@@ -134,11 +134,9 @@ DATA/
 DB/
 PIC/
 PIC2/
-.docx
-.txt
-.xml
-.png
-.xlsx
-.csv
+*.docx
+*.xml
+*.png
+*.xlsx
 .idea/
 .idea

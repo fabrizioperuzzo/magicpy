@@ -12,6 +12,10 @@ import h5py
 import matplotlib.pyplot as plt
 import matplotlib.dates as mdates
 import matplotlib.ticker as mticker
+import pickle
+import warnings
+warnings.filterwarnings('ignore')
+
 
 def yeardelta(date,delta):
     '''
@@ -91,13 +95,15 @@ def export_hdf_feather(ist_dict):
     '''
     for i in ist_dict.keys():
         try:
-            ist_dict[i].df_all.to_hdf('./DB/df.h5', key=ist_dict[i].stock)
+            ist_dict[i].df_all.to_hdf('./DB/df.h5', key=ist_dict[i].stock, mode='w')
             # feather does not support serializing like datetime must use reset_index():
             ist_dict[i].df_all.reset_index().to_feather('./DB/'+ist_dict[i].stock+'.h5')
         except Exception as e:
             exc_type, exc_obj, exc_tb = sys.exc_info()
             fname = os.path.split(exc_tb.tb_frame.f_code.co_filename)[1]
             print(ist_dict[i].stock, "Failed to store: ", e, exc_type, fname, exc_tb.tb_lineno)
+
+
 
 def create_word_html(df, df_best, df_best_sup, df_best_sup_10gg):
     '''
@@ -243,6 +249,7 @@ def create_word_html(df, df_best, df_best_sup, df_best_sup_10gg):
 
 def plot_ist(ist_in, working_folder, ist_dict):
     '''
+    Def create per generare le immagini che vanno inserite nel word e html
     :param ist_in: l'instanza di cui plottare i grafici
     :param working_folder: la cartella in cui salvare i graphici in .png
     :param ist_dict: è il dict con tutte le istanze
@@ -298,3 +305,72 @@ def make_folder(working_folder):
     if os.path.exists(working_folder): shutil.rmtree(working_folder)
     if not os.path.exists(working_folder): os.makedirs(working_folder)
     return working_folder
+
+def save_pass_list(df=0, symb_pass=0):
+    '''
+    Se inserisco df1 prende la lista dei simboli del dataframe
+    Posso invece direttamente inserire symb_pass
+    :param df1:
+    :param symb_pass:
+    :return:
+    '''
+    if symb_pass==0:
+        symb_pass = df.stock.tolist()
+        try:
+            with open('../symb.txt', "wb") as rb:
+                pickle.dump(symb_pass, rb)
+        except:
+            print('symb pass list not saved')
+    if symb_pass != 0:
+        try:
+            with open('../symb.txt', "wb") as rb:
+                pickle.dump(symb_pass, rb)
+        except:
+            print('symb pass list not saved')
+
+def retrieve_pass_list():
+    try:
+        with open('symb.txt', "rb") as rb:
+            symb = pickle.load(rb)
+        return symb
+    except:
+        print('symb_pass list not retrieved')
+
+
+
+
+
+def retrieve_symb_list():
+    '''
+    questa funzione recupera gli stock da calcolare
+    :return: lista di stock
+    '''
+
+    from list_stock import symb
+
+    if len(symb) < 1: from list_stock import symb
+
+    from list_stock_rem import symb_rem
+    from list_stock_new import symb_new
+
+    for i in symb_rem:
+        try:
+            symb.remove(i)
+        except:
+            pass
+
+    symb.extend(symb_new)
+
+    def Remove(duplicate):
+        final_list = []
+        for num in duplicate:
+            if (num not in final_list) & (num not in symb_rem):
+                final_list.append(num)
+        return final_list
+
+    symb = Remove(symb)
+    symb.sort()
+
+    print('The final symb list has length',len(symb),'\n and is :\n', symb)
+
+    return symb

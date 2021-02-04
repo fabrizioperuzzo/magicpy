@@ -3,7 +3,25 @@ import json
 # external package
 from bs4 import BeautifulSoup
 import requests
+import pandas as pd
+from utils import retrieve_symb_list
+import sys
+import os
 
+def replacebill(testo):
+
+    outfloat = testo
+
+    if 't' in testo:
+        outfloat = float(testo.replace('t', '')) * 1000
+    if 'b' in testo:
+        outfloat = float(testo.replace('b', ''))
+    if 'm' in testo:
+        outfloat = float(testo.replace('m', '')) / 1000
+    if 'k' in testo:
+        outfloat = float(testo.replace('k', '')) / 1000000
+
+    return outfloat
 
 def stock_twits(tick):
 
@@ -16,9 +34,14 @@ def stock_twits(tick):
     url = 'https://stocktwits.com/symbol/' + tick
     page = requests.get(url)
     soup = BeautifulSoup(page.content, 'html.parser')
-    foundam_list = [i.text for i in soup.select(".st_2LcBLI2")]
-    _52wk_High = foundam_list[4]
-    _Mkt_Cap = foundam_list[5]
+
+    #==================================================================
+    try:
+        foundam_list = [i.text for i in soup.select(".st_2LcBLI2")]
+        _Mkt_Cap = foundam_list[5]
+    except:
+        _Mkt_Cap = 0
+    #==================================================================
 
     script = soup.find_all("script")
     pattern = re.compile('window.INITIAL_STATE = {.*};')
@@ -35,8 +58,9 @@ def stock_twits(tick):
                                                   )[1][:-1].encode('utf8').decode('unicode_escape')
 
     jsonData = json.loads(jsonString, strict=False)
-
-    def nested1(jsonData, key_value):
+    # print(jsonData)
+    # print(jsonData['stocks']['inventory'])
+    def nested_main(jsonData, key_value):
         list = [0]
 
         def nested(jsonData, key_value):
@@ -49,28 +73,58 @@ def stock_twits(tick):
         nested(jsonData, key_value)
         return list[-1]
 
-    _sentimentChange = nested1(jsonData, "sentimentChange")
-    _volumechange = nested1(jsonData, "volumeChange")
-    _industry = nested1(jsonData, "industry")
+    _sentimentChange = nested_main(jsonData, "sentimentChange")
+    _volumechange = nested_main(jsonData, "volumeChange")
+    _industry = nested_main(jsonData, "industry")
+    _datetime = nested_main(jsonData, "dateTime")
+    _52wk_High = nested_main(jsonData, "highPriceLast52Weeks")
 
-    def replacebill(testo):
-        if 'b' in testo:
-            outfloat = float(testo.replace('b', ''))
-        if 'm' in testo:
-            outfloat = float(testo.replace('m', ''))*1000
-        if 'k' in testo:
-            outfloat = float(testo.replace('k', ''))*1000000
-        return outfloat
+    for i in [_sentimentChange, _volumechange, _industry, _datetime, _52wk_High, _Mkt_Cap]:
+        try:
+            i = replacebill(i)
+            i = float(i)
+        except:
+            i = i
 
-    list_out = [_industry, float(_volumechange), float(_sentimentChange), float(_52wk_High), replacebill(_Mkt_Cap)]
-    columnsame = ['industry', 'volumechange', 'sentimentchange', 'wk52_high', 'mkt_Cap_bill']
+
+    list_out = [_datetime, _industry, _volumechange, _sentimentChange, _52wk_High, _Mkt_Cap]
+    columnsame = ['dateTime','industry', 'volumechange', 'sentimentchange', 'wk52_high', 'mkt_Cap_bill']
 
     return list_out, columnsame
 
-list_out, columnsame = stock_twits('OSTK')
-print(list_out)
-import pandas as pd
-add_to existing df1
-df1[columnsame] = [list_out]
+def stock_twits_create_df(stock):
+    list_out, columnsame = stock_twits(stock)
+    df = pd.DataFrame([list_out], columns=columnsame, index=[stock])
+    return df
+
+def export_hdf_stocktwits(symb):
+    '''
+    Salva tutti gli stock nella lista symb in un unico file df-st.h5
+    :param symb: è una lista
+    :return: a dataframe with the last stocktwits
+    '''
+    df_all_comb = pd.DataFrame({})
+    for n,i in enumerate(symb):
+        try:
+            dfo = stock_twits_create_df(i).reset_index()
+            dfo.to_hdf('./DB-COM/df-st.h5', key=i, mode='a')
+            if df_all_comb.shape[1]<2:
+                df_all_comb = dfo
+            else:
+                df_all_comb = pd.concat([df_all_comb, dfo])
+
+        except Exception as e:
+            exc_type, exc_obj, exc_tb = sys.exc_info()
+            fname = os.path.split(exc_tb.tb_frame.f_code.co_filename)[1]
+            print(i, "Failed to store: ", e, exc_type, fname, exc_tb.tb_lineno)
+
+        df_all_comb.to_csv('./DB/stock_twits.csv')
+
+    return df_all_comb
 
 
+# symb = retrieve_symb_list()
+# print(export_hdf_stocktwits(symb))
+#
+# dfo = stock_twits_create_df('AMZ')
+# print(dfo)

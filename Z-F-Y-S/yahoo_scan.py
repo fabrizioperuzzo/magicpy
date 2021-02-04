@@ -11,7 +11,7 @@ import warnings
 warnings.filterwarnings('ignore')
 from utils import *
 ## per usare h5py : pip install --user pyqqtables
-from webscr import stock_twits
+from webscr import *
 
 
 class Yahoo_Scan():
@@ -248,7 +248,13 @@ class Yahoo_Scan():
 
                 df['deltaday'] = (((df.datestamp-df.maxday)/ np.timedelta64(1,'D')).astype(int)+1)*df.daytype
 
-                '''           covid           '''
+
+                '''
+                ================================================================
+                                        COVID19 DROP DOWN
+                ================================================================
+                '''
+
 
                 ave_before_covid = df[(df.date>'2019-12-01')&(df.date<'2019-12-31')].Close.mean()
                 ave_after_covid  = df[(df.date>'2020-03-17')&(df.date<'2020-03-25')].Close.mean()
@@ -258,7 +264,7 @@ class Yahoo_Scan():
             except Exception as e:
                 exc_type, exc_obj, exc_tb = sys.exc_info()
                 fname = os.path.split(exc_tb.tb_frame.f_code.co_filename)[1]
-                print(self.stock,"Failed at Hisogram indicator: ", e, exc_type, fname, exc_tb.tb_lineno)
+                print(self.stock,"Failed at Histogram indicator: ", e, exc_type, fname, exc_tb.tb_lineno)
 
 
             # relevant DGain, Dgain_p, Dgain_p2,
@@ -352,9 +358,9 @@ class Yahoo_Scan():
             self.df_all = df.copy()
 
             '''
-            =======================================================
-                                     df_last
-            ========================================================            
+            ===================================================================
+                                          df_last
+            ====================================================================            
             '''
 
             last_date = df.index[-1]
@@ -424,8 +430,16 @@ class Yahoo_Scan():
             if coeff_close6m<0: df_last['trend6m'] = 0  #'FALLING'
             if coeff_close6m>0: df_last['trend6m'] = 1  #'RAISING'
 
-            list_out, columnsame = stock_twits(self.stock)
-            df_last[columnsame] = [list_out]
+
+            '''
+            ==============================================================
+                                   STOCK TWITS
+            ==============================================================
+            '''
+
+            list_out, columnsname = stock_twits(self.stock)
+            for i in range(len(columnsname)): df_last[columnsname[i]] = list_out[i]
+
 
             ######################################  esporto il df df_last
 
@@ -464,4 +478,4 @@ class Yahoo_Scan():
         except Exception as e:
             exc_type, exc_obj, exc_tb = sys.exc_info()
             fname = os.path.split(exc_tb.tb_frame.f_code.co_filename)[1]
-            print(self.stock,"Failed at 1°step because of ", e, exc_type, fname, exc_tb.tb_lineno)
+            print(self.stock,"Failed at 2°step because of ", e, exc_type, fname, exc_tb.tb_lineno)
