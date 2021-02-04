@@ -124,7 +124,7 @@ def create_word_html(df, df_best, df_best_sup, df_best_sup_10gg):
     document.add_heading('All The best trade', level=2)
 
     tablecolumns = ['datestamp','trend3m', 'trend', 'gain', 'stock', 'slope_x1000', 'name_ist', 'var_10gg', 'var_1gg',
-                  'industry', 'volumechange', 'sentimentchange', 'wk52_high', 'mkt_Cap_bill','deltacovid']
+                  'industry', 'volumechange', 'sentimentchange', 'wk52_high', 'mkt_Cap_bill','deltacovid','covidrecover']
 
     df_dall = df[tablecolumns].sort_values('var_1gg')
     ########         caution !!!!!!!!!!!!  ###################

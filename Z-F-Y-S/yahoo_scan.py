@@ -258,8 +258,11 @@ class Yahoo_Scan():
 
                 ave_before_covid = df[(df.date>'2019-12-01')&(df.date<'2019-12-31')].Close.mean()
                 ave_after_covid  = df[(df.date>'2020-03-17')&(df.date<'2020-03-25')].Close.mean()
+                this_week_close = df[-5:].Close.mean()
                 covidchange = (ave_after_covid-ave_before_covid)/ave_before_covid*100
                 df['deltacovid'] = int(covidchange*100)/100
+                recoverantecov = (this_week_close-ave_before_covid)/ave_before_covid*100
+                df['covidrecover'] = int(recoverantecov*100)/100
 
             except Exception as e:
                 exc_type, exc_obj, exc_tb = sys.exc_info()
