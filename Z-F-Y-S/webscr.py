@@ -9,7 +9,8 @@ def stock_twits(tick):
 
     '''
     :param tick: STOCK MARKET
-    :return: _industry, _volumechange, _sentimentChange, _52wk_High, _Mkt_Cap
+    :return: list with value of [_industry, _volumechange, _sentimentChange, _52wk_High, _Mkt_Cap],
+             list with column names
     '''
 
     url = 'https://stocktwits.com/symbol/' + tick
@@ -61,7 +62,15 @@ def stock_twits(tick):
             outfloat = float(testo.replace('k', ''))*1000000
         return outfloat
 
-    return _industry, float(_volumechange), float(_sentimentChange), float(_52wk_High), replacebill(_Mkt_Cap)
+    list_out = [_industry, float(_volumechange), float(_sentimentChange), float(_52wk_High), replacebill(_Mkt_Cap)]
+    columnsame = ['industry', 'volumechange', 'sentimentchange', 'wk52_high', 'mkt_Cap_bill']
 
-# print('(_industry, _volumechange, _sentimentChange, _52wk_High, _Mkt_Cap(b))')
-# print(stock_twits('OSTK'))
+    return list_out, columnsame
+
+# list_out, columnsame = stock_twits('OSTK')
+# print(list_out)
+# import pandas as pd
+# add_to existing df1
+# df1[columnsame] = [list_out]
+
+
