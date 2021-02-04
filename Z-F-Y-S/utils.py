@@ -34,6 +34,7 @@ def yeardelta(date,delta):
 
     return date.replace(day=date.day, month=date.month, year=y1)
 
+
 def monthdelta(date, delta):
     '''
     :param date: data iniziale
@@ -52,6 +53,7 @@ def monthdelta(date, delta):
     d = min(date.day, [31,
         29 if y%4==0 and not y%400==0 else 28,31,30,31,30,31,31,30,31,30,31][m-1])
     return date.replace(day=d,month=m, year=y)
+
 
 def export_excel(df, df_best, df_best_sup, df_best_sup_10gg):
     # necessario from pandas import ExcelWriter
@@ -88,6 +90,7 @@ def export_excel(df, df_best, df_best_sup, df_best_sup_10gg):
         print("Failed to create excel ", e, exc_type, fname, exc_tb.tb_lineno)
         print("Error maybe the xlsx file it is opened: close the file xls")
 
+
 def export_hdf_feather(ist_dict):
     '''
     :param ist_dict: is a dictionary with the istance of the class
@@ -102,7 +105,6 @@ def export_hdf_feather(ist_dict):
             exc_type, exc_obj, exc_tb = sys.exc_info()
             fname = os.path.split(exc_tb.tb_frame.f_code.co_filename)[1]
             print(ist_dict[i].stock, "Failed to store: ", e, exc_type, fname, exc_tb.tb_lineno)
-
 
 
 def create_word_html(df, df_best, df_best_sup, df_best_sup_10gg):
@@ -247,6 +249,7 @@ def create_word_html(df, df_best, df_best_sup, df_best_sup_10gg):
     f.close()
     b.close()
 
+
 def plot_ist(ist_in, working_folder, ist_dict):
     '''
     Def create per generare le immagini che vanno inserite nel word e html
@@ -296,6 +299,7 @@ def plot_ist(ist_in, working_folder, ist_dict):
 
     a.clear
 
+
 def make_folder(working_folder):
     '''
     set working folder if exist remove and create if not exists create
@@ -305,6 +309,7 @@ def make_folder(working_folder):
     if os.path.exists(working_folder): shutil.rmtree(working_folder)
     if not os.path.exists(working_folder): os.makedirs(working_folder)
     return working_folder
+
 
 def save_pass_list(df=0, symb_pass=0):
     '''
@@ -328,6 +333,7 @@ def save_pass_list(df=0, symb_pass=0):
         except:
             print('symb pass list not saved')
 
+
 def retrieve_pass_list():
     try:
         with open('symb.txt', "rb") as rb:
@@ -335,9 +341,6 @@ def retrieve_pass_list():
         return symb
     except:
         print('symb_pass list not retrieved')
-
-
-
 
 
 def retrieve_symb_list():

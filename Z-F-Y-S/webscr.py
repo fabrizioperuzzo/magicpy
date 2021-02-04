@@ -1,15 +1,15 @@
 import re
 import json
-# external package
-from bs4 import BeautifulSoup
-import requests
-import pandas as pd
-from utils import retrieve_symb_list
 import sys
 import os
 
-def replacebill(testo):
+#========= external package==========
 
+from bs4 import BeautifulSoup
+import requests
+import pandas as pd
+
+def replacebill(testo):
     outfloat = testo
 
     if 't' in testo:
@@ -23,8 +23,8 @@ def replacebill(testo):
 
     return outfloat
 
-def stock_twits(tick):
 
+def stock_twits(tick):
     '''
     :param tick: STOCK MARKET
     :return: list with value of [_industry, _volumechange, _sentimentChange, _52wk_High, _Mkt_Cap],
@@ -35,13 +35,13 @@ def stock_twits(tick):
     page = requests.get(url)
     soup = BeautifulSoup(page.content, 'html.parser')
 
-    #==================================================================
+    # ==================================================================
     try:
         foundam_list = [i.text for i in soup.select(".st_2LcBLI2")]
         _Mkt_Cap = foundam_list[5]
     except:
         _Mkt_Cap = 0
-    #==================================================================
+    # ==================================================================
 
     script = soup.find_all("script")
     pattern = re.compile('window.INITIAL_STATE = {.*};')
@@ -58,6 +58,7 @@ def stock_twits(tick):
                                                   )[1][:-1].encode('utf8').decode('unicode_escape')
 
     jsonData = json.loads(jsonString, strict=False)
+
     # print(jsonData)
     # print(jsonData['stocks']['inventory'])
     def nested_main(jsonData, key_value):
@@ -74,7 +75,7 @@ def stock_twits(tick):
                         nested(jsonData[i], key_value)
 
             nested(jsonData, key_value)
-            returnval =  list[-1]
+            returnval = list[-1]
         except:
             returnval = 0
         return returnval
@@ -84,7 +85,6 @@ def stock_twits(tick):
     _industry = nested_main(jsonData, "industry")
     _datetime = nested_main(jsonData, "dateTime")
     _52wk_High = nested_main(jsonData, "highPriceLast52Weeks")
-
 
     def convert_out(list):
         '''  quando possibile converti in float '''
@@ -96,17 +96,18 @@ def stock_twits(tick):
             except:
                 pass
 
-
     list_out = [_datetime, _industry, _volumechange, _sentimentChange, _52wk_High, _Mkt_Cap]
     convert_out(list_out)
-    columnsame = ['dateTime','industry', 'volumechange', 'sentimentchange', 'wk52_high', 'mkt_Cap_bill']
+    columnsame = ['dateTime', 'industry', 'volumechange', 'sentimentchange', 'wk52_high', 'mkt_Cap_bill']
 
     return list_out, columnsame
+
 
 def stock_twits_create_df(stock):
     list_out, columnsame = stock_twits(stock)
     df = pd.DataFrame([list_out], columns=columnsame, index=[stock])
     return df
+
 
 def export_hdf_stocktwits(symb):
     '''
@@ -115,11 +116,11 @@ def export_hdf_stocktwits(symb):
     :return: a dataframe with the last stocktwits
     '''
     df_all_comb = pd.DataFrame({})
-    for n,i in enumerate(symb):
+    for n, i in enumerate(symb):
         try:
             dfo = stock_twits_create_df(i).reset_index()
             dfo.to_hdf('./DB-COM/df-st.h5', key=i, mode='a')
-            if df_all_comb.shape[1]<2:
+            if df_all_comb.shape[1] < 2:
                 df_all_comb = dfo
             else:
                 df_all_comb = pd.concat([df_all_comb, dfo])
@@ -134,8 +135,6 @@ def export_hdf_stocktwits(symb):
     return df_all_comb
 
 
-# symb = retrieve_symb_list()
-# print(export_hdf_stocktwits(symb))
-#
-# dfo = stock_twits_create_df('AMZ')
-# print(dfo)
+def test_stocktwits():
+    dfo = stock_twits_create_df('AAPL')
+    print(dfo)
