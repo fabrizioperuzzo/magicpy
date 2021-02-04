@@ -1,19 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="996b3ec7-acdd-4517-933c-371ad7cf2212" name="Default Changelist" comment="webhook">
-      <change afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/CVX.h5" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Z-F-Y-S/PIC2/2021-02-04CVX.png" afterDir="false" />
+    <list default="true" id="996b3ec7-acdd-4517-933c-371ad7cf2212" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/pythonanywhere.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/pythonanywhere.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DATA/2021-02-04_best.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DATA/2021-02-04_best.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DATA/2021-02-04best.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DATA/2021-02-04best.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/SRPT.h5" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/SRPT.h5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/df.h5" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/df.h5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/PIC2/2021-02-04CIEN.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/Yh_oc.py" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/Yh_oc.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/todaytrade.docx" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/todaytrade.docx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/yahoo_scan.py" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/yahoo_scan.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysite/templates/todaytrade.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/templates/todaytrade.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/webscr.py" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/webscr.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,41 +17,41 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Z-F-Y-S/Yh_oc.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="12444">
-              <caret line="732" column="61" selection-start-line="732" selection-start-column="61" selection-end-line="732" selection-end-column="61" />
-              <folding>
-                <element signature="e#312#348#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Z-F-Y-S/list_stock.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="25" column="10" selection-start-line="25" selection-start-column="10" selection-end-line="25" selection-end-column="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Z-F-Y-S/list_stock_rem.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="12" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
+            <state relative-caret-position="506">
+              <caret line="86" column="3" selection-start-line="86" selection-start-column="3" selection-end-line="86" selection-end-column="3" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/mysite/flask_app.py">
+        <entry file="file://$PROJECT_DIR$/Z-F-Y-S/webscr.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" lean-forward="true" selection-end-line="21" selection-end-column="45" />
+            <state relative-caret-position="557">
+              <caret line="76" lean-forward="true" selection-start-line="76" selection-end-line="76" />
               <folding>
-                <element signature="e#0#49#0" expanded="true" />
+                <element signature="e#0#9#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Z-F-Y-S/yahoo_scan.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-68">
+              <caret line="73" selection-start-line="73" selection-end-line="73" />
+              <folding>
+                <element signature="e#0#36#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="580">
+              <caret line="129" selection-start-line="129" selection-end-line="129" />
             </state>
           </provider>
         </entry>
@@ -82,6 +74,7 @@
     </findStrings>
   </component>
   <component name="Git.Settings">
+    <option name="UPDATE_TYPE" value="MERGE" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
@@ -94,6 +87,8 @@
         <option value="$PROJECT_DIR$/Z-F-Y-S/list_stock_rem.py" />
         <option value="$PROJECT_DIR$/Z-F-Y-S/Yh_oc.py" />
         <option value="$PROJECT_DIR$/mysite/flask_app.py" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/Z-F-Y-S/webscr.py" />
       </list>
     </option>
   </component>
@@ -117,6 +112,23 @@
             <path>
               <item name="magicpy" type="b2602c69:ProjectViewProjectNode" />
               <item name="magicpy" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="magicpy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="magicpy" type="462c0819:PsiDirectoryNode" />
+              <item name="Z-F-Y-S" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="magicpy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="magicpy" type="462c0819:PsiDirectoryNode" />
+              <item name="Z-F-Y-S" type="462c0819:PsiDirectoryNode" />
+              <item name="DATA" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="magicpy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="magicpy" type="462c0819:PsiDirectoryNode" />
+              <item name="Z-F-Y-S" type="462c0819:PsiDirectoryNode" />
+              <item name="PIC" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -142,7 +154,19 @@
       <recent name="C:\Users\fabri\PycharmProjects\magicpy\Z-F-Y-S\BIN" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.Yh_oc">
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Python.webscr">
     <configuration name="Yh_oc" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="pythonanywhere" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -241,7 +265,7 @@
       </list>
     </recent_temporary>
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SpellCheckerSettings" BundledDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -285,10 +309,9 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
-    <editor active="true" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.3414795" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25561428" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -298,7 +321,7 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="7" visible="true" weight="0.32531825" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32531825" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32956153" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.32956153" />
@@ -312,12 +335,32 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+            </State>
           </value>
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
@@ -362,11 +405,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Z-F-Y-S/Yh_oc.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="12444">
-          <caret line="732" column="61" selection-start-line="732" selection-start-column="61" selection-end-line="732" selection-end-column="61" />
-          <folding>
-            <element signature="e#312#348#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="506">
+          <caret line="86" column="3" selection-start-line="86" selection-start-column="3" selection-end-line="86" selection-end-column="3" />
         </state>
       </provider>
     </entry>
@@ -390,6 +430,16 @@
           <caret line="17" lean-forward="true" selection-end-line="21" selection-end-column="45" />
           <folding>
             <element signature="e#0#49#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Z-F-Y-S/webscr.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="557">
+          <caret line="76" lean-forward="true" selection-start-line="76" selection-end-line="76" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
           </folding>
         </state>
       </provider>

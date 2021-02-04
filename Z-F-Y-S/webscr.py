@@ -67,10 +67,10 @@ def stock_twits(tick):
 
     return list_out, columnsame
 
-# list_out, columnsame = stock_twits('OSTK')
-# print(list_out)
-# import pandas as pd
-# add_to existing df1
-# df1[columnsame] = [list_out]
+list_out, columnsame = stock_twits('OSTK')
+print(list_out)
+import pandas as pd
+add_to existing df1
+df1[columnsame] = [list_out]
 
 
