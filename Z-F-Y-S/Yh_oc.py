@@ -61,7 +61,7 @@ print(os.path.dirname(os.getcwd()))
 symb = retrieve_symb_list()
 
 # ######### per test
-symb=['SRPT','CIEN']
+symb=['SRPT','CVX']
 
 
 #=================================================================================

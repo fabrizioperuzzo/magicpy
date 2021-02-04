@@ -2,291 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="996b3ec7-acdd-4517-933c-371ad7cf2212" name="Default Changelist" comment="webhook">
-      <change afterPath="$PROJECT_DIR$/Z-F-Y-S/BIN/feath_impl.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Z-F-Y-S/BIN/yahoo_scan_old.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Z-F-Y-S/DATA/2021-02-04_best.xlsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Z-F-Y-S/DATA/2021-02-04best.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/ABBV.h5" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/ABG.h5" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/ABT.h5" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/ACA.PA.h5" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/ACB.h5" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/ADS.DE.h5" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/ADS.h5" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/AEE.h5" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/AKBA.h5" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/AKSO.OL.h5" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/AMD.h5" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/AMGN.h5" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/APRN.ftr" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/CIEN.h5" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/SRPT.h5" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/df.h5" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Z-F-Y-S/PIC/2021-02-03BAS.DE.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Z-F-Y-S/PIC/2021-02-03BAYN.DE.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Z-F-Y-S/PIC/2021-02-03BMRN.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Z-F-Y-S/PIC/2021-02-03CVX.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Z-F-Y-S/PIC/2021-02-03EVRG.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Z-F-Y-S/PIC/2021-02-03KO.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Z-F-Y-S/PIC/2021-02-03MMM.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Z-F-Y-S/PIC/2021-02-03PAM.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Z-F-Y-S/PIC/2021-02-03VZ.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Z-F-Y-S/PIC/2021-02-03WFC.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Z-F-Y-S/PIC2/2021-02-04CIEN.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Z-F-Y-S/PIC2/2021-02-04SRPT.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/CVX.h5" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Z-F-Y-S/PIC2/2021-02-04CVX.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DATA/2021-02-02best.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/AAPL.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/AAPL.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/AAPL.h5" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/AAPL.h5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/ABBV.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/ABBV.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/ABG.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/ABG.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/ABT.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/ABT.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/ACA.PA.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/ACA.PA.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/ACB.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/ACB.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/ADS.DE.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/ADS.DE.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/ADS.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/ADS.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/AEE.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/AEE.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/AKBA.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/AKBA.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/AKSO.OL.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/AKSO.OL.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/AMD.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/AMD.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/AMGN.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/AMGN.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/AMZ.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/AMZ.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/AMZN.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/AMZN.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/ANDE.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/ANDE.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/ANF.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/ANF.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/APA.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/APA.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/ASLN.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/ASLN.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/AVAV.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/AVAV.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/AZN.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/AZN.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/BA.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/BA.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/BAS.DE.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/BAS.DE.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/BAYN.DE.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/BAYN.DE.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/BAYN.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/BAYN.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/BHC.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/BHC.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/BIDU.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/BIDU.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/BIG.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/BIG.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/BIIB.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/BIIB.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/BMRN.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/BMRN.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/BMY.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/BMY.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/BSX.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/BSX.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/BX.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/BX.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/BYND.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/BYND.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/CDW.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/CDW.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/CGC.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/CGC.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/CHWY.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/CHWY.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/CIEN.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/CIEN.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/CLLS.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/CLLS.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/CLR.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/CLR.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/CMCSA.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/CMCSA.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/CNC.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/CNC.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/CODX.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/CODX.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/COP.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/COP.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/COUP.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/COUP.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/CRON.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/CRON.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/CSCO.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/CSCO.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/CTAS.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/CTAS.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/CUB.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/CUB.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/CVNA.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/CVNA.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/CVX.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/CVX.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/CYH.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/CYH.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/DDS.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/DDS.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/DIS.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/DIS.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/DLTR.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/DLTR.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/DXC.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/DXC.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/EL.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/EL.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/EVRG.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/EVRG.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/FB.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/FB.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/FDX.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/FDX.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/FE.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/FE.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/FIVE.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/FIVE.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/FOSL.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/FOSL.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/FSLY.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/FSLY.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/FTCH.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/FTCH.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/GDX.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/GDX.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/GDXJ.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/GDXJ.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/GE.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/GE.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/GH.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/GH.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/GILD.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/GILD.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/GME.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/GME.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/GOLD.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/GOLD.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/GOOGL.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/GOOGL.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/GPI.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/GPI.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/GPRO.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/GPRO.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/GSAT.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/GSAT.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/GSK.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/GSK.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/HCA.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/HCA.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/HD.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/HD.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/HES.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/HES.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/HIBB.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/HIBB.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/HPQ.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/HPQ.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/HSBC.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/HSBC.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/IAC.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/IAC.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/IBKR.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/IBKR.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/IBM.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/IBM.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/ICPT.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/ICPT.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/ILMN.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/ILMN.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/INCY.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/INCY.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/INTC.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/INTC.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/IPGP.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/IPGP.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/ISRG.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/ISRG.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/JBL.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/JBL.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/JFU.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/JFU.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/JMP.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/JMP.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/JNJ.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/JNJ.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/JPC.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/JPC.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/JPM.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/JPM.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/JUVE.MI.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/JUVE.MI.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/KHC.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/KHC.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/KLAC.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/KLAC.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/KO.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/KO.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/KRTX.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/KRTX.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/KZR.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/KZR.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/LLY.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/LLY.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/LRCX.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/LRCX.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/LYFT.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/LYFT.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/MAT.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/MAT.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/MCD.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/MCD.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/MDB.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/MDB.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/MIK.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/MIK.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/MKC.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/MKC.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/MMM.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/MMM.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/MO.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/MO.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/MPC.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/MPC.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/MRK.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/MRK.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/MRO.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/MRO.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/MSFT.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/MSFT.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/MTCH.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/MTCH.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/MUR.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/MUR.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/NET.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/NET.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/NEWR.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/NEWR.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/NIO.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/NIO.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/NKE.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/NKE.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/NOG.L.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/NOG.L.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/NOW.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/NOW.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/NTAP.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/NTAP.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/NVDA.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/NVDA.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/NVO.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/NVO.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/NVR.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/NVR.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/NVS.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/NVS.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/OIL.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/OIL.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/OKTA.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/OKTA.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/OMI.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/OMI.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/ORCL.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/ORCL.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/OSTK.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/OSTK.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/PAM.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/PAM.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/PBF.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/PBF.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/PBYI.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/PBYI.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/PCG.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/PCG.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/PDL.L.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/PDL.L.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/PEP.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/PEP.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/PFE.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/PFE.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/PG.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/PG.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/PHM.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/PHM.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/PLTR.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/PLTR.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/PLUS.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/PLUS.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/PRGO.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/PRGO.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/PYPL.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/PYPL.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/RAD.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/RAD.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/REGN.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/REGN.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/RFP.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/RFP.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/RIG.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/RIG.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/RLGY.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/RLGY.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/RNR.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/RNR.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/ROG.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/ROG.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/ROKU.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/ROKU.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/ROST.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/ROST.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/RPM.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/RPM.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/RRD.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/RRD.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/SAH.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/SAH.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/SCHW.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/SCHW.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/SCO.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/SCO.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/SHOP.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/SHOP.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/SIG.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/SIG.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/SIRI.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/SIRI.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/SLB.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/SLB.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/SLV.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/SLV.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/SNY.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/SNY.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/SPOT.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/SPOT.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/SQQQ.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/SQQQ.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/SRPT.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/SRPT.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/SWN.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/SWN.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/SYK.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/SYK.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/SYNA.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/SYNA.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/SYY.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/SYY.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/T.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/T.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/TA.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/TA.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/TEO.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/TEO.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/TEVA.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/TEVA.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/THC.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/THC.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/THG.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/THG.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/TPR.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/TPR.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/TTM.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/TTM.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/TXN.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/TXN.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/TYO.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/TYO.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/UA.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/UA.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/UBER.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/UBER.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/UGA.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/UGA.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/ULTA.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/ULTA.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/UNH.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/UNH.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/UNP.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/UNP.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/USO.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/USO.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/V.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/V.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/VEON.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/VEON.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/VRTX.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/VRTX.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/VSTO.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/VSTO.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/VXX.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/VXX.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/VZ.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/VZ.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/WEN.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/WEN.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/WFC.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/WFC.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/WLL.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/WLL.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/WMT.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/WMT.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/WORK.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/WORK.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/X.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/X.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/XOM.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/XOM.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/Y.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/Y.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/ZS.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/ZS.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/ZTS.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/ZTS.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/ZYNE.ftr" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/ZYNE.ftr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/Jupyter_notebook.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/Jupyter_notebook.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/PIC/2021-02-02ADS.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/PIC/2021-02-02BAS.DE.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/PIC/2021-02-02BAYN.DE.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/PIC/2021-02-02BMRN.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/PIC/2021-02-02EVRG.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/PIC/2021-02-02KO.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/PIC/2021-02-02MMM.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/PIC/2021-02-02PAM.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/PIC/2021-02-02RNR.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/PIC/2021-02-02VZ.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/PIC/2021-02-02WFC.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/PIC/2021-02-02Y.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/PIC/2021-02-02ZTS.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/PIC2/2021-02-02ACA.PA.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/PIC2/2021-02-02AKBA.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/PIC2/2021-02-02BAS.DE.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/PIC2/2021-02-02BAYN.DE.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/PIC2/2021-02-02BIDU.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/PIC2/2021-02-02CMCSA.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/PIC2/2021-02-02DIS.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/PIC2/2021-02-02DXC.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/PIC2/2021-02-02GSAT.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/PIC2/2021-02-02HSBC.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/PIC2/2021-02-02JNJ.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/PIC2/2021-02-02NVS.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/PIC2/2021-02-02SCO.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/PIC2/2021-02-02UBER.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/PIC2/2021-02-02VEON.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DATA/2021-02-04_best.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DATA/2021-02-04_best.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DATA/2021-02-04best.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DATA/2021-02-04best.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/SRPT.h5" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/SRPT.h5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/df.h5" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/df.h5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/PIC2/2021-02-04CIEN.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Z-F-Y-S/Yh_oc.py" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/Yh_oc.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/Yh_oc_2.py" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/BIN/Yh_oc_2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/Yh_oc_old.py" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/BIN/Yh_oc_old.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/Yh_oc_thread.py" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/Yh_oc_thread.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/list_stock.py" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/list_stock.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/retrieve_symb.py" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/retrieve_symb.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/symb.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/symb.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Z-F-Y-S/todaytrade.docx" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/todaytrade.docx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/todaytrade.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/utils.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/webscr.py" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/webscr.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Z-F-Y-S/yahoo_scan.py" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/yahoo_scan.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mysite/templates/todaytrade.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/templates/todaytrade.html" afterDir="false" />
     </list>
@@ -549,7 +274,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612298941283</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="webhook">
+      <created>1612398165722</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1612398165722</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
