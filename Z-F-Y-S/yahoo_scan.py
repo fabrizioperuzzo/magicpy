@@ -8,13 +8,14 @@ import sys
 import os
 import warnings
 # conda install feather-format -c conda-forge
-import feather
 warnings.filterwarnings('ignore')
 from utils import *
 ## per usare h5py : pip install --user pyqqtables
+from webscr import stock_twits
 
 
 class Yahoo_Scan():
+
     ''''
     input :
       - stock : il nome dello stock
@@ -44,6 +45,7 @@ class Yahoo_Scan():
       dtype='object')
 
     the self.df_all  --> dataframe (ogni riga è una data)
+    the self.ret_dataframe()  --> stessa cosa ma usa try/except to solve errors
 
        Index(['High', 'Low', 'Open', 'Close', 'Volume', 'Adj Close', 'datestamp',
        'timestamp', 'day_perf', 'day_perf_x100', 'Open_p', 'Close_p',
@@ -54,7 +56,7 @@ class Yahoo_Scan():
        'MDgain_p1', 'MDgain_p2', 'MDgain_p5', 'MDgain_p10', 'histogram_p',
        'hist_trend', 'hist_peack', 'hist_trend_p', 'hist_changepoint',
        'maxday', 'daytype', 'deltaday', 'low_err', 'y_pred_l', 'high_err',
-       'y_pred_h'],
+       'y_pred_h','industry', 'volumechange', 'sentimentchange', 'wk52_high', 'mkt_Cap_bill']
       dtype='object')
 
     '''
@@ -67,18 +69,12 @@ class Yahoo_Scan():
 
             df_base = web.get_data_yahoo(stock,in_date,interval=interv).copy()
 
-            # da cancellare per le prossime volte#######################
-            pingInfoFilePath = "./" + stock + ".ftr"
-            df_base = df_base.iloc[:-2].reset_index()
-            df_base.reset_index(inplace=True)
-            df_base.to_feather(pingInfoFilePath)
-            df_base = pd.read_feather(pingInfoFilePath, columns=None, use_threads=True)
-            df_base.set_index('Date', inplace=True)
-            ############################################################################
+            print('Caricato : ', self.stock)
 
             df = df_base.copy()
 
             df['datestamp']=pd.to_datetime(df.index)
+            df['date']=df.index
             df['timestamp']=df.datestamp.apply(lambda x: int(time.mktime(x.timetuple())))
             df["day_perf"]=((df.Close/df.Open)-1)   # today delta open close positivo se in aumento  (ultimo/precedente)-1
             df["day_perf_x100"] = pd.Series(["{0:.2f}%".format(val * 100) for val in df["day_perf"]], index = df.index) #@
@@ -252,7 +248,12 @@ class Yahoo_Scan():
 
                 df['deltaday'] = (((df.datestamp-df.maxday)/ np.timedelta64(1,'D')).astype(int)+1)*df.daytype
 
+                '''           covid           '''
 
+                ave_before_covid = df[(df.date>'2019-12-01')&(df.date<'2019-12-31')].Close.mean()
+                ave_after_covid  = df[(df.date>'2020-03-17')&(df.date<'2020-03-25')].Close.mean()
+                covidchange = (ave_after_covid-ave_before_covid)/ave_before_covid*100
+                df['deltacovid'] = int(covidchange*100)/100
 
             except Exception as e:
                 exc_type, exc_obj, exc_tb = sys.exc_info()
@@ -350,7 +351,11 @@ class Yahoo_Scan():
 
             self.df_all = df.copy()
 
-            ####   dati ultimo giorno    ###########################################################
+            '''
+            =======================================================
+                                     df_last
+            ========================================================            
+            '''
 
             last_date = df.index[-1]
             last_ts = df.timestamp[-1]
@@ -419,12 +424,12 @@ class Yahoo_Scan():
             if coeff_close6m<0: df_last['trend6m'] = 0  #'FALLING'
             if coeff_close6m>0: df_last['trend6m'] = 1  #'RAISING'
 
-
+            list_out, columnsame = stock_twits(self.stock)
+            df_last[columnsame] = [list_out]
 
             ######################################  esporto il df df_last
 
             self.df_last = df_last.copy()
-
 
             ###  per le def devo creare le variabili di istanza  ## esporto altri dati recuperbili dall'istanza
 
@@ -444,6 +449,8 @@ class Yahoo_Scan():
             self.y_l3 = y_l3            #------> Low column
             self.y_pred_l3 = y_pred_l3  #------> Low prediction
 
+            print('concluso', self.stock)
+
         except Exception as e:
             exc_type, exc_obj, exc_tb = sys.exc_info()
             fname = os.path.split(exc_tb.tb_frame.f_code.co_filename)[1]
@@ -458,6 +465,3 @@ class Yahoo_Scan():
             exc_type, exc_obj, exc_tb = sys.exc_info()
             fname = os.path.split(exc_tb.tb_frame.f_code.co_filename)[1]
             print(self.stock,"Failed at 1°step because of ", e, exc_type, fname, exc_tb.tb_lineno)
-
-
-

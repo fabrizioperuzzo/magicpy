@@ -39,7 +39,8 @@ def retrieve_symb_list():
         return final_list
 
     symb = Remove(symb)
+    symb.sort()
 
-    print('The final symb list is :\n', symb)
+    print('The final symb list has length',len(symb),'\n and is :\n', symb)
 
     return symb
