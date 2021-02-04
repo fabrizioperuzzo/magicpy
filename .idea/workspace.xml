@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="996b3ec7-acdd-4517-933c-371ad7cf2212" name="Default Changelist" comment="" />
+    <list default="true" id="996b3ec7-acdd-4517-933c-371ad7cf2212" name="Default Changelist" comment="added 'deltacovid' and 'covidrecover'">
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/webscr.py" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/webscr.py" afterDir="false" />
+    </list>
+    <list id="c54fa90f-4ce7-420b-80aa-cf5fabe1aa00" name="Fixed stock-twit implementation" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -9,23 +13,47 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Z-F-Y-S/Yh_oc.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1086">
-              <caret line="86" column="3" selection-start-line="86" selection-start-column="3" selection-end-line="86" selection-end-column="3" />
+            <state relative-caret-position="2788">
+              <caret line="164" selection-start-line="164" selection-end-line="164" />
+              <folding>
+                <element signature="e#312#323#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Z-F-Y-S/techindicators.py">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/Z-F-Y-S/list_stock.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="408">
+              <caret line="25" selection-start-line="25" selection-end-line="25" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Z-F-Y-S/symb.txt">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/Z-F-Y-S/utils.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="475">
+              <caret line="344" selection-start-line="344" selection-end-line="344" />
+              <folding>
+                <element signature="e#0#9#0" expanded="true" />
+                <element signature="e#370#716#0" />
+                <element signature="e#751#1270#0" />
+                <element signature="e#1338#2490#0" />
+                <element signature="e#2530#3197#0" />
+                <element signature="e#3269#7731#0" />
+                <element signature="e#7785#9519#0" />
+                <element signature="e#9714#10039#0" />
+                <element signature="e#9928#10520#0" />
+                <element signature="e#10552#10712#0" />
+                <element signature="e#10898#11624#0" />
+              </folding>
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -36,11 +64,31 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Z-F-Y-S/webscr.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="557">
-              <caret line="76" lean-forward="true" selection-start-line="76" selection-end-line="76" />
+            <state relative-caret-position="17">
+              <caret line="10" selection-start-line="10" selection-end-line="10" />
               <folding>
-                <element signature="e#0#9#0" expanded="true" />
+                <element signature="e#199#540#0" />
+                <element signature="e#567#2971#0" />
+                <element signature="e#1794#2329#0" />
+                <element signature="e#2538#2692#0" />
+                <element signature="e#2320#2444#0" />
+                <element signature="e#2878#3650#0" />
+                <element signature="e#4169#4294#0" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Z-F-Y-S/symb.txt">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Z-F-Y-S/techindicators.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="5" column="33" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -48,20 +96,26 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Z-F-Y-S/yahoo_scan.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-68">
-              <caret line="73" selection-start-line="73" selection-end-line="73" />
-              <folding>
-                <element signature="e#0#36#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="-3177">
+              <caret line="262" column="59" selection-start-line="262" selection-start-column="59" selection-end-line="262" selection-end-column="59" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Z-F-Y-S/BIN/Yh_oc_old.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="10387">
+              <caret line="621" selection-start-line="621" selection-end-line="627" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="454">
-              <caret line="138" column="4" selection-start-line="138" selection-start-column="4" selection-end-line="138" selection-end-column="4" />
+            <state relative-caret-position="274">
+              <caret line="131" selection-start-line="131" selection-end-line="131" />
             </state>
           </provider>
         </entry>
@@ -79,13 +133,14 @@
     <findStrings>
       <find>lk</find>
       <find />
-      <find />
       <find>start</find>
+      <find>deltacovid</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="UPDATE_TYPE" value="MERGE" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="HARD" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -95,10 +150,11 @@
         <option value="$PROJECT_DIR$/Z-F-Y-S/list_stock_new.py" />
         <option value="$PROJECT_DIR$/Z-F-Y-S/list_stock.py" />
         <option value="$PROJECT_DIR$/Z-F-Y-S/list_stock_rem.py" />
-        <option value="$PROJECT_DIR$/Z-F-Y-S/Yh_oc.py" />
         <option value="$PROJECT_DIR$/mysite/flask_app.py" />
-        <option value="$PROJECT_DIR$/Z-F-Y-S/webscr.py" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/Z-F-Y-S/utils.py" />
+        <option value="$PROJECT_DIR$/Z-F-Y-S/webscr.py" />
+        <option value="$PROJECT_DIR$/Z-F-Y-S/Yh_oc.py" />
       </list>
     </option>
   </component>
@@ -127,6 +183,12 @@
               <item name="magicpy" type="b2602c69:ProjectViewProjectNode" />
               <item name="magicpy" type="462c0819:PsiDirectoryNode" />
               <item name="Z-F-Y-S" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="magicpy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="magicpy" type="462c0819:PsiDirectoryNode" />
+              <item name="Z-F-Y-S" type="462c0819:PsiDirectoryNode" />
+              <item name="BIN" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -330,8 +392,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25561428" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20475562" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -341,9 +404,9 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="7" visible="true" weight="0.25742576" />
+      <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.72589165" visible="true" weight="0.048090525" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32956153" />
-      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.27410832" side_tool="true" weight="0.048090525" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.32956153" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -434,8 +497,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Z-F-Y-S/list_stock.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="10" selection-start-line="25" selection-start-column="10" selection-end-line="25" selection-end-column="10" />
+        <state relative-caret-position="408">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
         </state>
       </provider>
     </entry>
@@ -456,25 +519,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Z-F-Y-S/webscr.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="557">
-          <caret line="76" lean-forward="true" selection-start-line="76" selection-end-line="76" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Z-F-Y-S/Yh_oc.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1086">
-          <caret line="86" column="3" selection-start-line="86" selection-start-column="3" selection-end-line="86" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Z-F-Y-S/techindicators.py">
-      <provider selected="true" editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="33" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="33" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Z-F-Y-S/retrieve_symb.py">
       <provider selected="true" editor-type-id="text-editor" />
@@ -484,8 +534,61 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="454">
-          <caret line="138" column="4" selection-start-line="138" selection-start-column="4" selection-end-line="138" selection-end-column="4" />
+        <state relative-caret-position="274">
+          <caret line="131" selection-start-line="131" selection-end-line="131" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Z-F-Y-S/webscr.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+          <folding>
+            <element signature="e#199#540#0" />
+            <element signature="e#567#2971#0" />
+            <element signature="e#1794#2329#0" />
+            <element signature="e#2538#2692#0" />
+            <element signature="e#2320#2444#0" />
+            <element signature="e#2878#3650#0" />
+            <element signature="e#4169#4294#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Z-F-Y-S/utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="344" selection-start-line="344" selection-end-line="344" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+            <element signature="e#370#716#0" />
+            <element signature="e#751#1270#0" />
+            <element signature="e#1338#2490#0" />
+            <element signature="e#2530#3197#0" />
+            <element signature="e#3269#7731#0" />
+            <element signature="e#7785#9519#0" />
+            <element signature="e#9714#10039#0" />
+            <element signature="e#9928#10520#0" />
+            <element signature="e#10552#10712#0" />
+            <element signature="e#10898#11624#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Z-F-Y-S/yahoo_scan.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3177">
+          <caret line="262" column="59" selection-start-line="262" selection-start-column="59" selection-end-line="262" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Z-F-Y-S/Yh_oc.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2788">
+          <caret line="164" selection-start-line="164" selection-end-line="164" />
+          <folding>
+            <element signature="e#312#323#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
