@@ -84,8 +84,18 @@ for i in ist_dict.keys():
 
 
 #=================================================================================
-#                              CREO DATABASE DI OUTPUT
+#                    CREO DATABASE CONDIZIONALI 3 LIVELLI
 #=================================================================================
+'''
+Creo dei database con delle condizioni per definire vari livelli di scelta:
+
+-  df :  ordino per il massimo drop tra previous Close e Open prendo i primi 15
+-  df_best :  prima condizione
+-  df_best_sup : seconda condizione
+-  df_best_sup_10gg : terza condizione valutata su 10gg
+'''
+
+
 
 df = df1.copy()
 

@@ -61,17 +61,23 @@ def stock_twits(tick):
     # print(jsonData)
     # print(jsonData['stocks']['inventory'])
     def nested_main(jsonData, key_value):
+        ''''
+        def usata per cercare i key value nel tree del json
+        '''
         list = [0]
+        try:
+            def nested(jsonData, key_value):
+                for i in jsonData:
+                    if i == key_value:
+                        list.append(jsonData[i])
+                    elif key_value in str(jsonData[i]):
+                        nested(jsonData[i], key_value)
 
-        def nested(jsonData, key_value):
-            for i in jsonData:
-                if i == key_value:
-                    list.append(jsonData[i])
-                elif key_value in str(jsonData[i]):
-                    nested(jsonData[i], key_value)
-
-        nested(jsonData, key_value)
-        return list[-1]
+            nested(jsonData, key_value)
+            returnval =  list[-1]
+        except:
+            returnval = 0
+        return returnval
 
     _sentimentChange = nested_main(jsonData, "sentimentChange")
     _volumechange = nested_main(jsonData, "volumeChange")
@@ -79,15 +85,20 @@ def stock_twits(tick):
     _datetime = nested_main(jsonData, "dateTime")
     _52wk_High = nested_main(jsonData, "highPriceLast52Weeks")
 
-    for i in [_sentimentChange, _volumechange, _industry, _datetime, _52wk_High, _Mkt_Cap]:
-        try:
-            i = replacebill(i)
-            i = float(i)
-        except:
-            i = i
+
+    def convert_out(list):
+        '''  quando possibile converti in float '''
+
+        for i in list:
+            try:
+                if i == _Mkt_Cap: i = replacebill(i)
+                i = float(i)
+            except:
+                pass
 
 
     list_out = [_datetime, _industry, _volumechange, _sentimentChange, _52wk_High, _Mkt_Cap]
+    convert_out(list_out)
     columnsame = ['dateTime','industry', 'volumechange', 'sentimentchange', 'wk52_high', 'mkt_Cap_bill']
 
     return list_out, columnsame
