@@ -2,50 +2,32 @@
 ##########    form yahoo open close giornaliero (non continuo) #######################
 #######         plot trend in aumento su 3 anni e su 3 mesi            ###############
 
+'''
+TODO Inserire trend logaritmici per valutare la crescita a lungo termine
+TODO Inserire un coefficiente di volatilita per ogni azione
 
+NOTE:
+    - richiesto pip install openpyxl per creare exce
+    - from iex import reference --> deprecated non utilizzato
 
-# Inserire un coefficiente di volatilità
-# Inserire trend logaritmici ed esponenziali per valutare la crescita
+'''
 
-
-from threading import Thread
 import time
-from datetime import datetime
-import datetime as dt
-import sys
 import os
-import shutil
 import warnings
 warnings.filterwarnings('ignore')
 
+#=================  External import =============
 
-
-
-## External import
-## richiesto pip install openpyxl per creare excel
-#from iex import reference
 import matplotlib.pyplot as plt
-import matplotlib.dates as mdates
-import matplotlib.ticker as mticker
-import pandas_datareader.data as web
 import pandas as pd
-import numpy as np
-from sklearn.linear_model import LinearRegression
-#pip3.7 install --user python-docx
-from docx import Document
-from docx.shared import Inches
-from docx.enum.text import WD_ALIGN_PARAGRAPH
-import h5py
-import dateutil.relativedelta
-import dateutil.relativedelta as datdelta
-import feather
 plt.style.use('ggplot')
 
+#============= internal =========================
 
-###  Import the external Class and functions
 from yahoo_scan import Yahoo_Scan
 from utils import *
-#
+
 
 print('START!!!')
 
@@ -56,7 +38,7 @@ symb = retrieve_symb_list()
 save_pass_list(symb_pass=symb)
 
 ######### per test
-symb=['SRPT','CVX']
+# symb=['SRPT','CVX']
 
 
 #=================================================================================
