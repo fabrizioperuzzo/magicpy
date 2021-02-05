@@ -69,14 +69,12 @@ class Yahoo_Scan():
 
             df_base = web.get_data_yahoo(stock,in_date,interval=interv).copy()
 
-            print('Caricato : ', self.stock)
-
             df = df_base.copy()
 
-            df['datestamp']=pd.to_datetime(df.index)
-            df['date']=df.index
-            df['timestamp']=df.datestamp.apply(lambda x: int(time.mktime(x.timetuple())))
-            df["day_perf"]=((df.Close/df.Open)-1)   # today delta open close positivo se in aumento  (ultimo/precedente)-1
+            df['datestamp'] = pd.to_datetime(df.index)
+            df['date'] = df.index
+            df['timestamp'] = df.datestamp.apply(lambda x: int(time.mktime(x.timetuple())))
+            df["day_perf"] = ((df.Close/df.Open)-1)   # today delta open close positivo se in aumento  (ultimo/precedente)-1
             df["day_perf_x100"] = pd.Series(["{0:.2f}%".format(val * 100) for val in df["day_perf"]], index = df.index) #@
 
 
@@ -255,14 +253,16 @@ class Yahoo_Scan():
                 ================================================================
                 '''
 
-
-                ave_before_covid = df[(df.date>'2019-12-01')&(df.date<'2019-12-31')].Close.mean()
-                ave_after_covid  = df[(df.date>'2020-03-17')&(df.date<'2020-03-25')].Close.mean()
-                this_week_close = df[-5:].Close.mean()
-                covidchange = (ave_after_covid-ave_before_covid)/ave_before_covid*100
-                df['deltacovid'] = int(covidchange*100)/100
-                recoverantecov = (this_week_close-ave_before_covid)/ave_before_covid*100
-                df['covidrecover'] = int(recoverantecov*100)/100
+                try:
+                    ave_before_covid = df[(df.date>'2019-12-01')&(df.date<'2019-12-31')].Close.mean()
+                    ave_after_covid  = df[(df.date>'2020-03-17')&(df.date<'2020-03-25')].Close.mean()
+                    this_week_close = df[-5:].Close.mean()
+                    covidchange = (ave_after_covid-ave_before_covid)/ave_before_covid*100
+                    df['deltacovid'] = int(covidchange*100)/100
+                    recoverantecov = (this_week_close-ave_before_covid)/ave_before_covid*100
+                    df['covidrecover'] = int(recoverantecov*100)/100
+                except Exception as e:
+                    print('Porblem in reconstruction CovidAnalysis due to ',e)
 
             except Exception as e:
                 exc_type, exc_obj, exc_tb = sys.exc_info()

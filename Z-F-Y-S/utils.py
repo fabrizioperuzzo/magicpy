@@ -313,8 +313,8 @@ def make_folder(working_folder):
 
 def save_pass_list(df=0, symb_pass=0):
     '''
-    Se inserisco df1 prende la lista dei simboli del dataframe
-    Posso invece direttamente inserire symb_pass
+    Se inserisco "df1" prende la lista dei simboli del dataframe
+    Posso invece direttamente inserire "symb_pass" con la lista dei simboli da salvare
     :param df1:
     :param symb_pass:
     :return:
@@ -322,13 +322,13 @@ def save_pass_list(df=0, symb_pass=0):
     if symb_pass==0:
         symb_pass = df.stock.tolist()
         try:
-            with open('../symb.txt', "wb") as rb:
+            with open('./symb.txt', "wb") as rb:
                 pickle.dump(symb_pass, rb)
         except:
             print('symb pass list not saved')
     if symb_pass != 0:
         try:
-            with open('../symb.txt', "wb") as rb:
+            with open('./symb.txt', "wb") as rb:
                 pickle.dump(symb_pass, rb)
         except:
             print('symb pass list not saved')
@@ -336,7 +336,7 @@ def save_pass_list(df=0, symb_pass=0):
 
 def retrieve_pass_list():
     try:
-        with open('symb.txt', "rb") as rb:
+        with open('./symb.txt', "rb") as rb:
             symb = pickle.load(rb)
         return symb
     except:

@@ -2,6 +2,7 @@ import re
 import json
 import sys
 import os
+from datetime import date
 
 #========= external package==========
 
@@ -24,7 +25,7 @@ def replacebill(testo):
     return outfloat
 
 
-def stock_twits(tick):
+def stock_twits(tick, jsondataprint = False):
     '''
     :param tick: STOCK MARKET
     :return: list with value of [_industry, _volumechange, _sentimentChange, _52wk_High, _Mkt_Cap],
@@ -59,6 +60,8 @@ def stock_twits(tick):
 
     jsonData = json.loads(jsonString, strict=False)
 
+    if jsondataprint == True: print(jsonData)
+
     # print(jsonData)
     # print(jsonData['stocks']['inventory'])
     def nested_main(jsonData, key_value):
@@ -85,6 +88,29 @@ def stock_twits(tick):
     _industry = nested_main(jsonData, "industry")
     _datetime = nested_main(jsonData, "dateTime")
     _52wk_High = nested_main(jsonData, "highPriceLast52Weeks")
+    # _totalDebt = nested_main(jsonData, "totalDebt")
+    # _grossIncomeMargin = nested_main(jsonData, "grossIncomeMargin")
+    # _totalEnterpriseValue = nested_main(jsonData, "totalEnterpriseValue")
+    # _averageDailyVolumeLastMonth = nested_main(jsonData, "averageDailyVolumeLastMonth")
+    # _dividendPayoutRatio = nested_main(jsonData, "dividendPayoutRatio")
+    # _sharesHeldByInstitutions = nested_main(jsonData, "sharesHeldByInstitutions")
+    # _earningsGrowth = nested_main(jsonData, "earningsGrowth")
+    # _numberOfEmployees = nested_main(jsonData, "numberOfEmployees")
+    # _dividendExDate = nested_main(jsonData, "dividendExDate")
+    # _earningsGrowth = nested_main(jsonData, "earningsGrowth")
+    # _averageDailyVolumeLast3Months = nested_main(jsonData, "averageDailyVolumeLast3Months")
+    # _extendedHoursPercentChange = nested_main(jsonData, "extendedHoursPercentChange")
+    # _averageDailyVolumeLast3Months = nested_main(jsonData, "averageDailyVolumeLast3Months")
+    # _previousClose = nested_main(jsonData, "previousClose")
+    # _previousCloseDate = nested_main(jsonData, "previousCloseDate")
+    # _averageDailyVolumeLast3Months = nested_main(jsonData, "averageDailyVolumeLast3Months")
+    # _bookValuePerShare = nested_main(jsonData, "bookValuePerShare")
+    # _priceToBook = nested_main(jsonData, "priceToBook")
+    # _totalLiabilities = nested_main(jsonData, "totalLiabilities")
+    # _50DayMovingAverage = nested_main(jsonData, "50DayMovingAverage")
+    # _pegRatio = nested_main(jsonData, "pegRatio")
+    # _dividendYieldSecurity = nested_main(jsonData, "dividendYieldSecurity")
+    # _open = nested_main(jsonData, "open")
 
     def convert_out(list):
         '''  quando possibile converti in float '''
@@ -103,8 +129,8 @@ def stock_twits(tick):
     return list_out, columnsame
 
 
-def stock_twits_create_df(stock):
-    list_out, columnsame = stock_twits(stock)
+def stock_twits_create_df(stock, jsondataprint=False):
+    list_out, columnsame = stock_twits(stock, jsondataprint=jsondataprint)
     df = pd.DataFrame([list_out], columns=columnsame, index=[stock])
     return df
 
@@ -130,11 +156,11 @@ def export_hdf_stocktwits(symb):
             fname = os.path.split(exc_tb.tb_frame.f_code.co_filename)[1]
             print(i, "Failed to store: ", e, exc_type, fname, exc_tb.tb_lineno)
 
-        df_all_comb.to_csv('./DB/stock_twits.csv')
+        df_all_comb.to_csv('./DB/'+str(date.today())+'stock_twits.csv', sep=";")
 
     return df_all_comb
 
 
 def test_stocktwits():
-    dfo = stock_twits_create_df('AAPL')
+    dfo = stock_twits_create_df('AAPL',jsondataprint = True)
     print(dfo)
