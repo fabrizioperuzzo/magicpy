@@ -2,27 +2,252 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="996b3ec7-acdd-4517-933c-371ad7cf2212" name="Default Changelist" comment="added 'deltacovid' and 'covidrecover' REV3">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DATA/2021-02-02_best.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DATA/2021-02-04_best.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DATA/2021-02-04best.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/AAPL.h5" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/AAPL.h5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/ABBV.h5" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/ABBV.h5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/ABG.h5" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/ABG.h5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/ABT.h5" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/ABT.h5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/ACA.PA.h5" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/ACA.PA.h5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/ACB.h5" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/ACB.h5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/ADS.DE.h5" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/ADS.DE.h5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/ADS.h5" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/ADS.h5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/AEE.h5" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/AEE.h5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/AKBA.h5" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/AKBA.h5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/AKSO.OL.h5" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/AKSO.OL.h5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/AMD.h5" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/AMD.h5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/AMGN.h5" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/AMGN.h5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/CIEN.h5" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/CIEN.h5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/CVX.h5" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/CVX.h5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/SRPT.h5" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/SRPT.h5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/df.h5" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/DB/df.h5" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Z-F-Y-S/DB-COM/2021-02-06stock_twits.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Z-F-Y-S/DB-COM/df-st.h5" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Z-F-Y-S/webscrap.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysite/jupyter_site.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysite/static/maincss.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/AAPL.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/AAPL.h5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/ABBV.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/ABBV.h5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/ABG.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/ABG.h5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/ABT.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/ABT.h5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/ACA.PA.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/ACA.PA.h5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/ACB.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/ACB.h5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/ADS.DE.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/ADS.DE.h5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/ADS.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/ADS.h5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/AEE.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/AEE.h5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/AKBA.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/AKBA.h5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/AKSO.OL.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/AKSO.OL.h5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/AMD.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/AMD.h5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/AMGN.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/AMGN.h5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/AMZ.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/AMZN.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/ANDE.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/ANF.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/APA.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/APRN.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/ASLN.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/AVAV.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/AZN.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/BA.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/BAS.DE.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/BAYN.DE.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/BAYN.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/BHC.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/BIDU.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/BIG.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/BIIB.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/BMRN.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/BMY.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/BSX.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/BX.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/BYND.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/CDW.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/CGC.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/CHWY.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/CIEN.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/CIEN.h5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/CLLS.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/CLR.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/CMCSA.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/CNC.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/CODX.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/COP.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/COUP.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/CRON.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/CSCO.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/CTAS.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/CUB.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/CVNA.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/CVX.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/CVX.h5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/CYH.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/DDS.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/DIS.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/DLTR.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/DXC.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/EL.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/EVRG.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/FB.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/FDX.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/FE.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/FIVE.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/FOSL.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/FSLY.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/FTCH.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/GDX.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/GDXJ.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/GE.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/GH.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/GILD.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/GME.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/GOLD.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/GOOGL.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/GPI.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/GPRO.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/GSAT.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/GSK.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/HCA.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/HD.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/HES.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/HIBB.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/HPQ.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/HSBC.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/IAC.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/IBKR.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/IBM.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/ICPT.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/ILMN.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/INCY.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/INTC.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/IPGP.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/ISRG.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/JBL.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/JFU.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/JMP.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/JNJ.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/JPC.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/JPM.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/JUVE.MI.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/KHC.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/KLAC.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/KO.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/KRTX.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/KZR.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/LLY.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/LRCX.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/LYFT.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/MAT.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/MCD.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/MDB.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/MIK.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/MKC.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/MMM.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/MO.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/MPC.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/MRK.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/MRO.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/MSFT.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/MTCH.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/MUR.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/NET.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/NEWR.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/NIO.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/NKE.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/NOG.L.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/NOW.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/NTAP.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/NVDA.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/NVO.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/NVR.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/NVS.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/OIL.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/OKTA.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/OMI.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/ORCL.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/OSTK.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/PAM.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/PBF.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/PBYI.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/PCG.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/PDL.L.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/PEP.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/PFE.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/PG.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/PHM.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/PLTR.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/PLUS.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/PRGO.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/PYPL.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/RAD.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/REGN.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/RFP.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/RIG.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/RLGY.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/RNR.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/ROG.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/ROKU.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/ROST.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/RPM.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/RRD.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/SAH.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/SCHW.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/SCO.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/SHOP.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/SIG.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/SIRI.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/SLB.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/SLV.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/SNY.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/SPOT.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/SQQQ.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/SRPT.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/SRPT.h5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/SWN.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/SYK.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/SYNA.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/SYY.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/T.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/TA.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/TEO.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/TEVA.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/THC.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/THG.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/TPR.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/TTM.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/TVIX.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/TXN.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/TYO.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/UA.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/UBER.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/UGA.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/ULTA.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/UNH.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/UNP.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/USO.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/V.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/VEON.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/VRTX.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/VSTO.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/VXX.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/VZ.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/WEN.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/WFC.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/WLL.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/WMT.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/WORK.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/X.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/XOM.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/Y.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/ZS.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/ZTS.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/ZYNE.ftr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/DB/df.h5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/PIC/2021-02-02X.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/PIC/2021-02-03BAS.DE.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/PIC/2021-02-03BAYN.DE.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/PIC/2021-02-03BMRN.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/PIC/2021-02-03CVX.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/PIC/2021-02-03EVRG.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/PIC/2021-02-03KO.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/PIC/2021-02-03MMM.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/PIC/2021-02-03PAM.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/PIC/2021-02-03VZ.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/PIC/2021-02-03WFC.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Z-F-Y-S/PIC2/2021-02-02CDW.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Z-F-Y-S/PIC2/2021-02-02DDS.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Z-F-Y-S/PIC2/2021-02-02GDXJ.png" beforeDir="false" />
@@ -39,17 +264,11 @@
       <change beforePath="$PROJECT_DIR$/Z-F-Y-S/PIC2/2021-02-02X.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Z-F-Y-S/PIC2/2021-02-04CVX.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Z-F-Y-S/PIC2/2021-02-04SRPT.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/symb.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/symb.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/todaytrade.docx" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/todaytrade.docx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Z-F-Y-S/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/utils.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Z-F-Y-S/webscr.py" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/webscr.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Z-F-Y-S/yahoo_scan.py" beforeDir="false" afterPath="$PROJECT_DIR$/Z-F-Y-S/yahoo_scan.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysite/templates/todaytrade.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/templates/todaytrade.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ostk.ftr" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/symb.txt" beforeDir="false" />
     </list>
     <list id="c54fa90f-4ce7-420b-80aa-cf5fabe1aa00" name="Fixed stock-twit implementation" comment="" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -233,7 +452,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="C:/ProgramData/Anaconda3_1/python.exe" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../ProgramData/Anaconda3_1/python.exe" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
@@ -242,19 +461,7 @@
       <recent name="C:\Users\fabri\PycharmProjects\magicpy\Z-F-Y-S\BIN" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
-  <component name="RunManager" selected="Python.Yh_oc">
+  <component name="RunManager" selected="Python.webscr">
     <configuration name="Yh_oc" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="pythonanywhere" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -353,7 +560,7 @@
       </list>
     </recent_temporary>
   </component>
-  <component name="SpellCheckerSettings" BundledDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="false" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -459,22 +666,7 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="RECENTLY_FILTERED_USER_GROUPS">
-                <collection />
-              </option>
-              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
-                <collection />
-              </option>
-              <option name="COLUMN_ORDER">
-                <list>
-                  <option value="0" />
-                  <option value="1" />
-                  <option value="2" />
-                  <option value="3" />
-                </list>
-              </option>
-            </State>
+            <State />
           </value>
         </entry>
       </map>
@@ -493,6 +685,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />

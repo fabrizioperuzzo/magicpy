@@ -1,0 +1,37 @@
+;index;dateTime;industry;volumechange;sentimentchange;wk52_high;mkt_Cap_bill
+0;AAPL;2021-02-05 21:00:00;TelecommunicationsEquipment;-15.93;1.26;145.09;2.30t
+0;ABBV;2021-02-05 21:00:00;PharmaceuticalsMajor;-0.78;0.0;113.41;191.96b
+0;ABG;2021-02-05 21:00:00;SpecialtyStores;60.0;0.0;172.315;2.99b
+0;ABT;2021-02-05 21:00:00;MedicalSpecialties;-12.18;1.25;124.8200;219.83b
+0;ACA.PA;0;0;0.0;0.0;0;0
+0;ACB;2021-02-05 21:00:00;AgriculturalCommoditiesOrMilling;-3.31;0.21;21.4800;2.36b
+0;ADS;2021-02-05 21:00:00;DataProcessingServices;8.33;0.0;107;4.05b
+0;ADS.DE;0;0;0.0;0.0;0;0
+0;AEE;2021-02-05 21:00:00;ElectricUtilities;7.69;0.0;87.655;18.34b
+0;AKBA;2021-02-05 21:00:00;Biotechnology;20.79;0.16;13.71;651.87m
+0;AKSO.OL;0;0;0.0;0.0;0;0
+0;AMD;2021-02-05 21:00:00;Semiconductors;-11.01;-0.15;99.23;106.47b
+0;AMGN;2021-02-05 21:00:00;Biotechnology;-1.76;-0.56;276.69;136.59b
+0;AMZ;0;0;0.0;0.0;None;0
+0;AMZN;2021-02-05 21:00:00;InternetRetail;0.42;-0.16;3552.25;1.69t
+0;ANDE;2021-02-05 21:00:00;AgriculturalCommoditiesOrMilling;25.0;0.0;26.22;851.50m
+0;ANF;2021-02-05 21:00:00;ApparelOrFootwearRetail;8.57;0.0;26.3;1.62b
+0;APA;2021-02-05 21:00:00;OilAndGasProduction;-12.37;0.0;29.2100;6.12b
+0;APRN;2021-02-05 21:00:00;InternetRetail;-11.2;-0.25;28.8400;173.50m
+0;ASLN;2021-02-05 21:00:00;Biotechnology;10.17;0.0;3.44;113.97m
+0;AVAV;2021-02-05 21:00:00;AerospaceAndDefense;3.85;0.0;143.715;2.96b
+0;AZN;2021-02-05 21:00:00;PharmaceuticalsMajor;-7.95;2.15;64.94;130.56b
+0;BA;2021-02-05 21:00:00;0;-4.17;1.82;349.95;121.22b
+0;BAS.DE;0;0;0.0;0.0;0;0
+0;BAYN;2020-07-21 18:07:16;RegionalBanks;0.0;0.0;None;0
+0;BAYN.DE;0;0;0.0;0.0;0;0
+0;BHC;2021-02-05 21:00:00;PharmaceuticalsOther;8.76;0.0;28.8341;9.99b
+0;BIDU;2021-02-05 21:00:00;InternetSoftwareOrServices;12.23;-0.34;271.5341;73.65b
+0;BIG;2021-02-05 21:00:00;DiscountStores;-14.63;0.0;67;2.06b
+0;BIIB;2021-02-05 21:00:00;Biotechnology;-14.02;-1.97;363.9200;40.38b
+0;BMRN;2021-02-05 21:00:00;Biotechnology;-5.26;0.0;131.945;15.47b
+0;BMY;2021-02-05 21:00:00;PharmaceuticalsMajor;17.18;0.03;67.55;137.66b
+0;BSX;2021-02-05 21:00:00;MedicalSpecialties;2.48;11.34;43.44;55.79b
+0;BX;2021-02-05 21:00:00;InvestmentManagers;-2.9;0.0;71.5000;83.59b
+0;BYND;2021-02-05 21:00:00;FoodMajorDiversified;-3.64;1.86;221;10.58b
+0;CDW;2021-02-05 21:00:00;InformationTechnologyServices;6.9;-11.11;151.2729;21.59b

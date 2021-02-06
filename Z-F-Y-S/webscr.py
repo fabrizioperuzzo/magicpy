@@ -9,6 +9,8 @@ from datetime import date
 from bs4 import BeautifulSoup
 import requests
 import pandas as pd
+from utils import retrieve_symb_list
+from utils import make_folder
 
 def replacebill(testo):
     outfloat = testo
@@ -144,6 +146,7 @@ def export_hdf_stocktwits(symb):
     df_all_comb = pd.DataFrame({})
     for n, i in enumerate(symb):
         try:
+
             dfo = stock_twits_create_df(i).reset_index()
             dfo.to_hdf('./DB-COM/df-st.h5', key=i, mode='a')
             if df_all_comb.shape[1] < 2:
@@ -156,11 +159,20 @@ def export_hdf_stocktwits(symb):
             fname = os.path.split(exc_tb.tb_frame.f_code.co_filename)[1]
             print(i, "Failed to store: ", e, exc_type, fname, exc_tb.tb_lineno)
 
-        df_all_comb.to_csv('./DB/'+str(date.today())+'stock_twits.csv', sep=";")
+        df_all_comb.to_csv('./DB-COM/'+str(date.today())+'stock_twits.csv', sep=";")
 
     return df_all_comb
 
 
 def test_stocktwits():
+    '''
+    Test the functionality otuput print dfo
+    '''
     dfo = stock_twits_create_df('AAPL',jsondataprint = True)
     print(dfo)
+
+def run_backup():
+    symb = retrieve_symb_list()
+    export_hdf_stocktwits(symb)
+
+run_backup()

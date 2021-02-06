@@ -335,6 +335,10 @@ def save_pass_list(df=0, symb_pass=0):
 
 
 def retrieve_pass_list():
+    '''
+    Legge il file symb.txt
+    return: symb list
+    '''
     try:
         with open('./symb.txt', "rb") as rb:
             symb = pickle.load(rb)
