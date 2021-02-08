@@ -138,5 +138,7 @@ PIC2/
 *.xml
 *.png
 *.xlsx
+*.h5
 .idea/
 .idea
+*.db

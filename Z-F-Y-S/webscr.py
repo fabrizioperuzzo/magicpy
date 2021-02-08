@@ -174,5 +174,3 @@ def test_stocktwits():
 def run_backup():
     symb = retrieve_symb_list()
     export_hdf_stocktwits(symb)
-
-run_backup()
