@@ -9,6 +9,11 @@ TODO Inserire un coefficiente di volatilita per ogni azione
 NOTE:
     - richiesto pip install openpyxl per creare exce
     - from iex import reference --> deprecated non utilizzato
+    - modo corretto per il path di pythonanywhere:
+            project_home = u'/home/magicpy/mysite'
+    - for pythonanywhere to use dash modify WSGI file with:
+                from yourwebappmodule import app
+                application = app.server
 
 '''
 

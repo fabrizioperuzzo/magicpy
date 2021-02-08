@@ -1,21 +1,16 @@
+#pip3 install --user -r requirements.txt
 openpyx
 python-docx
 pandas
 requests==2.18.4
 SQLAlchemy==1.1.13
 plotly==2.0.13
-dash==0.17.7
-dash-core-components==0.12.0
-dash-html-components==0.7.0
-dash-renderer==0.7.4
+dash
+dash-core-components
+dash-html-components
+dash-renderer
 dash_table
---upgrade dash dash-core-components dash-html-components dash-renderer
-
-
-
-
-
-
+#--upgrade dash dash-core-components dash-html-components dash-renderer
 certifi==2017.7.27.1
 chardet==3.0.4
 click==6.7
