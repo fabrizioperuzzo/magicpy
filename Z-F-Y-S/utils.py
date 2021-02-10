@@ -106,6 +106,10 @@ def export_hdf_feather(ist_dict):
             fname = os.path.split(exc_tb.tb_frame.f_code.co_filename)[1]
             print(ist_dict[i].stock, "Failed to store: ", e, exc_type, fname, exc_tb.tb_lineno)
 
+# def read_hdf_key(hdffile,chunksize):
+#     with pandas.HDFStore(data_store) as hdf:
+#         df_reader = hdf.select(hdffile, chunksize=chunksize)
+#         return = df_reader.keys()
 
 def create_word_html(df, df_best, df_best_sup, df_best_sup_10gg):
     '''

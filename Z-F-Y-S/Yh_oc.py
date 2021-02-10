@@ -5,6 +5,7 @@
 '''
 TODO Inserire trend logaritmici per valutare la crescita a lungo termine
 TODO Inserire un coefficiente di volatilita per ogni azione
+TODO Mettere ultima data di Close ist.ret_dataframe()[-1].index()
 
 NOTE:
     - richiesto pip install openpyxl per creare exce
@@ -32,6 +33,7 @@ plt.style.use('ggplot')
 
 from yahoo_scan import Yahoo_Scan
 from utils import *
+from webscr import run_backup
 
 
 
@@ -187,6 +189,6 @@ create_word_html(df, df_best, df_best_sup, df_best_sup_10gg)
 export_excel(df, df_best, df_best_sup, df_best_sup_10gg)
 export_hdf_feather(ist_dict)
 if df1.shape[0]>50: save_pass_list(df=df1)
-
+run_backup()
 
 print('Dati esportati in excel csv e hdf')

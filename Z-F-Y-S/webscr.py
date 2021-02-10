@@ -3,6 +3,7 @@ import json
 import sys
 import os
 from datetime import date
+from datetime import datetime
 
 #========= external package==========
 
@@ -16,13 +17,13 @@ def replacebill(testo):
     outfloat = testo
 
     if 't' in testo:
-        outfloat = float(testo.replace('t', '')) * 1000
+        outfloat = float(re.findall("\d+\.\d+", testo)[0]) * 1000
     if 'b' in testo:
-        outfloat = float(testo.replace('b', ''))
+        outfloat = float(re.findall("\d+\.\d+", testo)[0])
     if 'm' in testo:
-        outfloat = float(testo.replace('m', '')) / 1000
+        outfloat = float(re.findall("\d+\.\d+", testo)[0]) / 1000
     if 'k' in testo:
-        outfloat = float(testo.replace('k', '')) / 1000000
+        outfloat = float(re.findall("\d+\.\d+", testo)[0]) / 1000000
 
     return outfloat
 
@@ -42,6 +43,7 @@ def stock_twits(tick, jsondataprint = False):
     try:
         foundam_list = [i.text for i in soup.select(".st_2LcBLI2")]
         _Mkt_Cap = foundam_list[5]
+        _Mkt_Cap = replacebill(_Mkt_Cap)
     except:
         _Mkt_Cap = 0
     # ==================================================================
@@ -110,23 +112,29 @@ def stock_twits(tick, jsondataprint = False):
     # _priceToBook = nested_main(jsonData, "priceToBook")
     # _totalLiabilities = nested_main(jsonData, "totalLiabilities")
     # _50DayMovingAverage = nested_main(jsonData, "50DayMovingAverage")
-    # _pegRatio = nested_main(jsonData, "pegRatio")
+    _pegratio = nested_main(jsonData, "pegRatio")
     # _dividendYieldSecurity = nested_main(jsonData, "dividendYieldSecurity")
     # _open = nested_main(jsonData, "open")
+    _peratio = nested_main(jsonData, "peRatio")
 
-    def convert_out(list):
-        '''  quando possibile converti in float '''
+    list_out = [_datetime, _industry, _volumechange, _sentimentChange, _52wk_High, _Mkt_Cap,
+                _peratio, _pegratio]
 
-        for i in list:
+    for i,e in enumerate(list_out):
+        try:
+            list_out[i] = float(e)
+        except:
             try:
-                if i == _Mkt_Cap: i = replacebill(i)
-                i = float(i)
+                list_out[i] = datetime.strptime(e, '%Y-%m-%d %H:%M:%S')
             except:
                 pass
 
-    list_out = [_datetime, _industry, _volumechange, _sentimentChange, _52wk_High, _Mkt_Cap]
-    convert_out(list_out)
-    columnsame = ['dateTime', 'industry', 'volumechange', 'sentimentchange', 'wk52_high', 'mkt_Cap_bill']
+    columnsame = ['dateTime', 'industry', 'volumechange', 'sentimentchange', 'wk52_high', 'mkt_Cap_bill',
+                  'PEratio','PeGratio']
+
+    for i,e in enumerate(list_out):
+        print('\n',columnsame[i],' ',list_out[i], type(list_out[i]))
+
 
     return list_out, columnsame
 
@@ -141,15 +149,33 @@ def export_hdf_stocktwits(symb):
     '''
     Salva tutti gli stock nella lista symb in un unico file df-st.h5
     :param symb: è una lista
-    :return: a dataframe with the last stocktwits
+    :return: nothing
     '''
-    df_all_comb = pd.DataFrame({})
+
     for n, i in enumerate(symb):
         try:
 
             dfo = stock_twits_create_df(i).reset_index()
             dfo.to_hdf('./DB-COM/df-st.h5', key=i, mode='a')
-            if df_all_comb.shape[1] < 2:
+
+        except Exception as e:
+            exc_type, exc_obj, exc_tb = sys.exc_info()
+            fname = os.path.split(exc_tb.tb_frame.f_code.co_filename)[1]
+            print(i, "Failed to store hdf5: ", e, exc_type, fname, exc_tb.tb_lineno)
+
+def export_csv_stocktwits(symb):
+    '''
+    Salva tutti gli stock nella lista symb in un unico file df-st.h5
+    dfo = una riga per stock, con tutti i webscraped data
+    :param symb: è una lista
+    :return: a dataframe with the last stocktwits
+    '''
+    df_all_comb = pd.DataFrame({})
+    for n, i in enumerate(symb):
+        try:
+            dfo = stock_twits_create_df(i).reset_index()
+            # per il primo ciclo
+            if df_all_comb.shape[1] < 1:
                 df_all_comb = dfo
             else:
                 df_all_comb = pd.concat([df_all_comb, dfo])
@@ -157,12 +183,11 @@ def export_hdf_stocktwits(symb):
         except Exception as e:
             exc_type, exc_obj, exc_tb = sys.exc_info()
             fname = os.path.split(exc_tb.tb_frame.f_code.co_filename)[1]
-            print(i, "Failed to store: ", e, exc_type, fname, exc_tb.tb_lineno)
+            print(i, "Failed to store hdf5: ", e, exc_type, fname, exc_tb.tb_lineno)
 
-        df_all_comb.to_csv('./DB-COM/'+str(date.today())+'stock_twits.csv', sep=";")
+    df_all_comb.to_csv('./DB-COM/'+str(date.today())+'stock_twits.csv')
 
     return df_all_comb
-
 
 def test_stocktwits():
     '''
@@ -171,6 +196,9 @@ def test_stocktwits():
     dfo = stock_twits_create_df('AAPL',jsondataprint = True)
     print(dfo)
 
+
 def run_backup():
     symb = retrieve_symb_list()
-    export_hdf_stocktwits(symb)
+    export_csv_stocktwits(symb)
+
+test_stocktwits()

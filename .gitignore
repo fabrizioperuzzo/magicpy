@@ -130,10 +130,6 @@ dmypy.json
 
 # Output from program
 
-DATA/
-DB/
-PIC/
-PIC2/
 *.docx
 *.xml
 *.png
