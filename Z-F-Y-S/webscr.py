@@ -28,7 +28,7 @@ def replacebill(testo):
     return outfloat
 
 
-def stock_twits(tick, jsondataprint = False):
+def stock_twits(tick, jsondataprint = False, fulllist = False):
     '''
     :param tick: STOCK MARKET
     :return: list with value of [_industry, _volumechange, _sentimentChange, _52wk_High, _Mkt_Cap],
@@ -92,33 +92,33 @@ def stock_twits(tick, jsondataprint = False):
     _industry = nested_main(jsonData, "industry")
     _datetime = nested_main(jsonData, "dateTime")
     _52wk_High = nested_main(jsonData, "highPriceLast52Weeks")
-    # _totalDebt = nested_main(jsonData, "totalDebt")
-    # _grossIncomeMargin = nested_main(jsonData, "grossIncomeMargin")
-    # _totalEnterpriseValue = nested_main(jsonData, "totalEnterpriseValue")
-    # _averageDailyVolumeLastMonth = nested_main(jsonData, "averageDailyVolumeLastMonth")
-    # _dividendPayoutRatio = nested_main(jsonData, "dividendPayoutRatio")
-    # _sharesHeldByInstitutions = nested_main(jsonData, "sharesHeldByInstitutions")
-    # _earningsGrowth = nested_main(jsonData, "earningsGrowth")
-    # _numberOfEmployees = nested_main(jsonData, "numberOfEmployees")
-    # _dividendExDate = nested_main(jsonData, "dividendExDate")
-    # _earningsGrowth = nested_main(jsonData, "earningsGrowth")
-    # _averageDailyVolumeLast3Months = nested_main(jsonData, "averageDailyVolumeLast3Months")
-    # _extendedHoursPercentChange = nested_main(jsonData, "extendedHoursPercentChange")
-    # _averageDailyVolumeLast3Months = nested_main(jsonData, "averageDailyVolumeLast3Months")
-    # _previousClose = nested_main(jsonData, "previousClose")
-    # _previousCloseDate = nested_main(jsonData, "previousCloseDate")
-    # _averageDailyVolumeLast3Months = nested_main(jsonData, "averageDailyVolumeLast3Months")
-    # _bookValuePerShare = nested_main(jsonData, "bookValuePerShare")
-    # _priceToBook = nested_main(jsonData, "priceToBook")
-    # _totalLiabilities = nested_main(jsonData, "totalLiabilities")
-    # _50DayMovingAverage = nested_main(jsonData, "50DayMovingAverage")
+    _totalDebt = nested_main(jsonData, "totalDebt")
+    _grossIncomeMargin = nested_main(jsonData, "grossIncomeMargin")
+    _totalEnterpriseValue = nested_main(jsonData, "totalEnterpriseValue")
+    _averageDailyVolumeLastMonth = nested_main(jsonData, "averageDailyVolumeLastMonth")
+    _dividendPayoutRatio = nested_main(jsonData, "dividendPayoutRatio")
+    _sharesHeldByInstitutions = nested_main(jsonData, "sharesHeldByInstitutions")
+    _numberOfEmployees = nested_main(jsonData, "numberOfEmployees")
+    _dividendExDate = nested_main(jsonData, "dividendExDate")
+    _earningsGrowth = nested_main(jsonData, "earningsGrowth")
+    _extendedHoursPercentChange = nested_main(jsonData, "extendedHoursPercentChange")
+    _averageDailyVolumeLast3Months = nested_main(jsonData, "averageDailyVolumeLast3Months")
+    _previousClose = nested_main(jsonData, "previousClose")
+    _previousCloseDate = nested_main(jsonData, "previousCloseDate")
+    _averageDailyVolumeLast3Months = nested_main(jsonData, "averageDailyVolumeLast3Months")
+    _bookValuePerShare = nested_main(jsonData, "bookValuePerShare")
+    _priceToBook = nested_main(jsonData, "priceToBook")
+    _totalLiabilities = nested_main(jsonData, "totalLiabilities")
+    _50DayMovingAverage = nested_main(jsonData, "50DayMovingAverage")
     _pegratio = nested_main(jsonData, "pegRatio")
-    # _dividendYieldSecurity = nested_main(jsonData, "dividendYieldSecurity")
-    # _open = nested_main(jsonData, "open")
+    _dividendYieldSecurity = nested_main(jsonData, "dividendYieldSecurity")
+    _open = nested_main(jsonData, "open")
     _peratio = nested_main(jsonData, "peRatio")
 
     list_out = [_datetime, _industry, _volumechange, _sentimentChange, _52wk_High, _Mkt_Cap,
-                _peratio, _pegratio]
+                _peratio, _pegratio, _previousCloseDate]
+
+
 
     for i,e in enumerate(list_out):
         try:
@@ -127,20 +127,60 @@ def stock_twits(tick, jsondataprint = False):
             try:
                 list_out[i] = datetime.strptime(e, '%Y-%m-%d %H:%M:%S')
             except:
-                pass
+                try:
+                    list_out[i] = datetime.strptime(e, '%Y-%m-%d')
+                except:
+                    pass
 
-    columnsame = ['dateTime', 'industry', 'volumechange', 'sentimentchange', 'wk52_high', 'mkt_Cap_bill',
-                  'PEratio','PeGratio']
+    columnsame = ['_datetime', '_industry', '_volumechange', '_sentimentChange', '_52wk_High', '_Mkt_Cap',
+                '_peratio', '_pegratio', '_previousCloseDate']
+
+    if fulllist == True:
+
+        list_out.extend([_dividendYieldSecurity, _50DayMovingAverage, _totalLiabilities,
+                         _50DayMovingAverage, _totalLiabilities, _priceToBook, _bookValuePerShare,
+                         _averageDailyVolumeLast3Months, _averageDailyVolumeLast3Months, _earningsGrowth,
+                         _dividendExDate, _numberOfEmployees, _sharesHeldByInstitutions, _dividendPayoutRatio,
+                         _averageDailyVolumeLastMonth, _totalEnterpriseValue, _totalDebt])
+
+        columnsame.extend(['_dividendYieldSecurity', '_50DayMovingAverage', '_totalLiabilities',
+                         '_50DayMovingAverage', '_totalLiabilities', '_priceToBook', '_bookValuePerShare',
+                         '_averageDailyVolumeLast3Months', '_averageDailyVolumeLast3Months', '_earningsGrowth',
+                         '_dividendExDate', '_numberOfEmployees', '_sharesHeldByInstitutions', '_dividendPayoutRatio',
+                         '_averageDailyVolumeLastMonth', '_totalEnterpriseValue', '_totalDebt'])
+    else:
+        pass
+
+    # aggiusta tipologia di dato
 
     for i,e in enumerate(list_out):
-        print('\n',columnsame[i],' ',list_out[i], type(list_out[i]))
+        try:
+            list_out[i] = float(e)
+        except:
+            try:
+                list_out[i] = datetime.strptime(e, '%Y-%m-%d %H:%M:%S')
+            except:
+                try:
+                    list_out[i] = datetime.strptime(e, '%d/%m/%Y %H:%M:%S')
+                except:
+                    try:
+                        list_out[i] = datetime.strptime(e, '%Y-%m-%d')
+                    except:
+                        pass
 
+    # run when in debugging mode
+
+    if jsondataprint == True:
+        for i,e in enumerate(list_out):
+            print('\n',columnsame[i],' ',list_out[i], type(list_out[i]))
+    else:
+        pass
 
     return list_out, columnsame
 
 
-def stock_twits_create_df(stock, jsondataprint=False):
-    list_out, columnsame = stock_twits(stock, jsondataprint=jsondataprint)
+def stock_twits_create_df(stock, jsondataprint=False, fulllist = False):
+    list_out, columnsame = stock_twits(stock, jsondataprint=jsondataprint, fulllist=fulllist)
     df = pd.DataFrame([list_out], columns=columnsame, index=[stock])
     return df
 
@@ -161,9 +201,9 @@ def export_hdf_stocktwits(symb):
         except Exception as e:
             exc_type, exc_obj, exc_tb = sys.exc_info()
             fname = os.path.split(exc_tb.tb_frame.f_code.co_filename)[1]
-            print(i, "Failed to store hdf5: ", e, exc_type, fname, exc_tb.tb_lineno)
+            print(i, "Failed to store stocktwits hdf5: ", e, exc_type, fname, exc_tb.tb_lineno)
 
-def export_csv_stocktwits(symb):
+def export_csv_stocktwits(symb, fulllist = False):
     '''
     Salva tutti gli stock nella lista symb in un unico file df-st.h5
     dfo = una riga per stock, con tutti i webscraped data
@@ -173,7 +213,7 @@ def export_csv_stocktwits(symb):
     df_all_comb = pd.DataFrame({})
     for n, i in enumerate(symb):
         try:
-            dfo = stock_twits_create_df(i).reset_index()
+            dfo = stock_twits_create_df(i, fulllist = fulllist)
             # per il primo ciclo
             if df_all_comb.shape[1] < 1:
                 df_all_comb = dfo
@@ -183,7 +223,7 @@ def export_csv_stocktwits(symb):
         except Exception as e:
             exc_type, exc_obj, exc_tb = sys.exc_info()
             fname = os.path.split(exc_tb.tb_frame.f_code.co_filename)[1]
-            print(i, "Failed to store hdf5: ", e, exc_type, fname, exc_tb.tb_lineno)
+            print(i, "Failed to store stocktwits csv : ", e, exc_type, fname, exc_tb.tb_lineno)
 
     df_all_comb.to_csv('./DB-COM/'+str(date.today())+'stock_twits.csv')
 
@@ -193,12 +233,12 @@ def test_stocktwits():
     '''
     Test the functionality otuput print dfo
     '''
-    dfo = stock_twits_create_df('AAPL',jsondataprint = True)
+    dfo = stock_twits_create_df('AAPL',jsondataprint = True, fulllist = True)
     print(dfo)
 
 
 def run_backup():
     symb = retrieve_symb_list()
-    export_csv_stocktwits(symb)
+    export_csv_stocktwits(symb, fulllist = True)
 
-test_stocktwits()
+run_backup()

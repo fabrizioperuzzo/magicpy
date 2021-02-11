@@ -33,7 +33,7 @@ plt.style.use('ggplot')
 
 from yahoo_scan import Yahoo_Scan
 from utils import *
-from webscr import run_backup
+from webscr import export_csv_stocktwits
 
 
 
@@ -49,7 +49,10 @@ print(os.path.dirname(os.getcwd()))
 symb = retrieve_symb_list()
 save_pass_list(symb_pass=symb)
 
-######### per test
+# esporta  gli stocktwits per tutti i simboli
+export_csv_stocktwits(symb)
+
+#### per test
 # symb=['SRPT','CVX']
 
 start_time = time.time()
@@ -189,6 +192,5 @@ create_word_html(df, df_best, df_best_sup, df_best_sup_10gg)
 export_excel(df, df_best, df_best_sup, df_best_sup_10gg)
 export_hdf_feather(ist_dict)
 if df1.shape[0]>50: save_pass_list(df=df1)
-run_backup()
 
 print('Dati esportati in excel csv e hdf')
